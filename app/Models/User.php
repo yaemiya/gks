@@ -19,15 +19,22 @@ class User extends Authenticatable implements MustVerifyEmail
     use Notifiable;
     // use TwoFactorAuthenticatable;
 
+    protected $primaryKey = 'user_id';
+
     /**
      * The attributes that are mass assignable.
      *
      * @var string[]
      */
     protected $fillable = [
-        'name',
+        'login_id',
+        'emp_no',
+        'last_name',
+        'first_name',
         'email',
         'password',
+        'tel',
+        'role'
     ];
 
     /**

@@ -32137,6 +32137,253 @@ select {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* ドロップダウンメニュー */
+
+.dropdwn_menu {
+  zoom: 1;
+  background-color: black;
+  border: small solid whitesmoke;
+  text-align: center;
+}
+
+.dropdwn_menu li {
+  float: left;
+  width: 200px;
+  height: 36px;
+  position: relative;
+  list-style-type: none;
+  border-top: 1px solid whitesmoke;
+  border-right: 1px solid whitesmoke;
+}
+
+.dropdwn_menu:first-child {
+  border-left: 1px solid whitesmoke;
+}
+
+.dropdwn_menu li:hover {
+  background-color: rgb(77, 77, 77);
+}
+
+* html .dropdwn_menu li {
+  display: inline;
+  zoom: 1;
+}
+
+*+html .dropdwn_menu li {
+  display: inline;
+  zoom: 1;
+}
+
+.dropdwn_menu a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 36px;
+  font-weight: bold;
+  color: whitesmoke;
+  text-decoration: none;
+  position: relative;
+}
+
+.dropdwn_menu ul.sub2 {
+  display: none;
+  background-color: black;
+}
+
+* html .dropdwn_menu ul.sub2 {
+  zoom: 1;
+  position: relative;
+}
+
+*+html .dropdwn_menu ul.sub2 {
+  zoom: 1;
+  position: relative;
+}
+
+.dropdwn_menu ul.sub2 li {
+  float: none;
+}
+
+.dropdwn_menu ul.sub2 li ul.sub2 {
+  position: absolute;
+  left: 200px;
+  top: 0;
+}
+
+.dropdwn_menu:after {
+  height: 0;
+  visibility: hidden;
+  content: ".";
+  display: block;
+  clear: both;
+}
+
+.triangle_down {
+  border-top: solid 6px whitesmoke;
+  border-right: solid 6px transparent;
+  border-left: solid 6px transparent;
+  border-bottom: solid 6px transparent;
+}
+
+.triangle_right {
+  border-left: solid 6px whitesmoke;
+  border-right: solid 6px transparent;
+  border-top: solid 6px transparent;
+  border-bottom: solid 6px transparent;
+}
+
+/* 各ページ共通 */
+
+.pageView {
+  padding: 20px;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.title {
+  /* margin-top: 20px; */
+  margin-bottom: 30px;
+  font-size: 25px;
+  text-align: center;
+}
+
+/* ボタン */
+
+.btn-green {
+  --tw-bg-opacity: 1;
+  background-color: rgba(5, 150, 105, var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.btn-green:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(52, 211, 153, var(--tw-bg-opacity));
+}
+
+.btn-blue {
+  --tw-bg-opacity: 1;
+  background-color: rgba(37, 99, 235, var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.btn-blue:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(96, 165, 250, var(--tw-bg-opacity));
+}
+
+.btn-red {
+  --tw-bg-opacity: 1;
+  background-color: rgba(220, 38, 38, var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.btn-red:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(248, 113, 113, var(--tw-bg-opacity));
+}
+
+.btn-gray {
+  --tw-bg-opacity: 1;
+  background-color: rgba(75, 85, 99, var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.btn-gray:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(156, 163, 175, var(--tw-bg-opacity));
+}
+
+.btn-disabled {
+  --tw-bg-opacity: 1;
+  background-color: rgba(156, 163, 175, var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.notAllowed {
+  cursor: not-allowed !important;
+}
+
+/* テーブル */
+
+table {
+  /* width: 90%; */
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+th {
+  border: 1px solid black;
+}
+
+td {
+  border: 1px solid black;
+  padding-left: 10px;
+}
+
+thead th {
+  height: 35px;
+  background-color: gray;
+  color: white;
+}
+
+tbody td {
+  height: 45px;
+}
+
+tbody tr:nth-child(2n) {
+  background-color: #dcdcdc;
+}
+
+tbody a {
+  color: blue;
+}
+
+tbody td a:hover {
+  text-decoration: underline;
+}
+
+/* モーダルCSS */
+
+.modalArea {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  /*サイトによってここの数値は調整 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modalBg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 30, 30, 0.9);
+}
+
+.modalWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  max-width: 500px;
+  padding: 30px 40px;
+  background-color: #fff;
+}
+
+.closeModal {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;

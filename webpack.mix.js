@@ -11,10 +11,25 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js( 'resources/js/app.js', 'public/js' ).js( 'resources/js/auth.js', 'public/js' ).autoload( {
-    "jquery": [ '$', 'window.jQuery' ],
-} ).postCss( 'resources/css/app.css', 'public/css', [
-    require( 'postcss-import' ),
-    require( 'tailwindcss' ),
-    require( 'autoprefixer' ),
-] );
+mix.js("resources/js/app.js", "public/js")
+    .js("resources/js/auth-check.js", "public/js")
+    .js("resources/js/account.js", "public/js")
+    .js("resources/js/master.js", "public/js")
+    .autoload({
+        jquery: ["$", "window.jQuery"],
+    })
+    .postCss("resources/css/app.css", "public/css", [
+        require("postcss-import"),
+        require("tailwindcss"),
+        require("autoprefixer"),
+    ])
+    .postCss("resources/css/account.css", "public/css", [
+        require("postcss-import"),
+        require("tailwindcss"),
+        require("autoprefixer"),
+    ])
+    .postCss("resources/css/master.css", "public/css", [
+        require("postcss-import"),
+        require("tailwindcss"),
+        require("autoprefixer"),
+    ]);

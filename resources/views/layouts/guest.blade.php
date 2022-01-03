@@ -15,7 +15,7 @@
 
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
-        <script src="{{ mix('js/auth.js') }}"></script>
+        <script src="{{ mix('js/auth-check.js') }}"></script>
     </head>
     <body>
         <div class="font-sans text-gray-900 antialiased min-w-full">

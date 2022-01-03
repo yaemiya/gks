@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Password;
 use Illuminate\Support\Str;
 use Illuminate\Validation\Rules;
+use App\Rules\isLoginFormat;    // 追加
 
 class NewPasswordController extends Controller
 {
@@ -35,8 +36,8 @@ class NewPasswordController extends Controller
     {
         $request->validate([
             'token' => ['required'],
-            'login_id' => ['required', 'login_id'],
-            'password' => ['required', 'confirmed', Rules\Password::defaults()],
+            'login_id' => ['bail', 'required', 'string', new isLoginFormat,  'between:8,16'],
+            'password' => ['bail', 'required', 'regex:/^[A-Za-z0-9]*$/', 'between:8,16', 'confirmed'],
         ]);
 
         // Here we will attempt to reset the user's password. If it is successful we

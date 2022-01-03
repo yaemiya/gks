@@ -22,31 +22,41 @@
                 <x-label for="login_id" :value="__('Login ID')" />
 
                 <x-input id="login_id"
-                class="block mt-1 w-full text-xs"
-                type="text"
-                :value="old('login_id')"
-                name="login_id"
-                maxlength="8"
-                autofocus
-                placeholder="半角英数字8字" />
+                    class="block mt-1 w-full text-xs"
+                    type="text"
+                    :value="old('login_id')"
+                    name="login_id"
+                    maxlength="16"
+                    autofocus
+                    placeholder="必須 半角英数字および「.-_」8-16字"
+                />
             </div>
 
             <!-- Password -->
             <div class="mt-4">
                 <x-label for="password" :value="__('Password')" />
 
-                <x-input id="password" class="block mt-1 w-full text-xs" type="password" name="password"
-                placeholder="半角英数字8字以上16字以内" />
+                <x-input id="password"
+                    class="block mt-1 w-full text-xs"
+                    type="password"
+                    name="password"
+                    maxlength="16"
+                    autocomplete="current-password"
+                    placeholder="半角英数字8字以上16字以内"
+                />
             </div>
 
             <!-- Confirm Password -->
             <div class="mt-4 text-xs">
                 <x-label for="password_confirmation" :value="__('Confirm Password')" />
 
-                <x-input id="password_confirmation" class="block mt-1 w-full text-xs"
-                                    type="password"
-                                    name="password_confirmation"
-                                    placeholder="半角英数字8字以上16字以内" />
+                <x-input id="password_confirmation"
+                    class="block mt-1 w-full text-xs"
+                     type="password"
+                    name="password_confirmation"
+                    maxlength="16"
+                    placeholder="半角英数字8字以上16字以内"
+                />
             </div>
 
             <div class="flex items-center justify-end my-4">

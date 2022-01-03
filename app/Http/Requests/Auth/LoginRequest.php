@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\Str;
 use Illuminate\Validation\ValidationException;
+use App\Rules\isLoginFormat;    // 追加
 
 class LoginRequest extends FormRequest
 {
@@ -29,8 +30,8 @@ class LoginRequest extends FormRequest
     public function rules()
     {
         return [
-            'login_id' => ['required', 'string', 'alpha_num', 'size:8'],
-            'password' => ['required', 'string', 'alpha_num', 'min:8', 'max:16'],
+            'login_id' => ['bail', 'required', 'string', new isLoginFormat, 'between:8,16'],
+            'password' => ['required'],
         ];
     }
 

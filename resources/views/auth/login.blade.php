@@ -1,11 +1,6 @@
 <x-guest-layout>
     <x-auth-card>
-        <!-- <x-slot name="logo">
-            <a href="/">
-                <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
-            </a>
-        </x-slot> -->
-        <h1 class="center text-center font-bold my-4">ログイン画面</h1>
+        <h1 class="center text-center font-bold mt-4 mb-6">ログイン画面</h1>
 
         <!-- Session Status -->
         <x-auth-session-status class="mb-4" :status="session('status')" />
@@ -27,9 +22,9 @@
                 type="text"
                 :value="old('login_id')"
                 name="login_id"
-                maxlength="8"
+                maxlength="16"
                 autofocus
-                placeholder="半角英数字8字" />
+                placeholder="半角英数字8字以上16字以内" />
             </div>
 
             <!-- Password -->
@@ -40,7 +35,6 @@
                 class="block mt-1 w-full text-xs"
                 type="password"
                 name="password"
-                maxlength="16"
                 autocomplete="current-password"
                 placeholder="半角英数字8字以上16字以内" />
             </div>
@@ -52,7 +46,7 @@
                     </a>
                 @endif
 
-                <x-button id="login_btn" class="ml-8 mb-4">
+                <x-button id="login_btn" class="ml-8 my-4">
                     {{ __('Log in') }}
                 </x-button>
             </div>

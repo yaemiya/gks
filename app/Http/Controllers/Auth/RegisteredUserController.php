@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules;
+use App\Rules\isLoginFormat;    // 追加
 
 class RegisteredUserController extends Controller
 {
@@ -34,21 +35,33 @@ class RegisteredUserController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'confirmed', Rules\Password::defaults()],
+            'login_id' => ['bail', 'required', 'string', new isLoginFormat,  'between:8,16'],
+            'emp_no' => ['bail', 'required', 'string', 'regex:/^[A-Za-z0-9]*$/', 'size:4'],
+            'last_name' => ['bail', 'required', 'string', 'max:20'],
+            'first_name' => ['bail', 'required', 'string', 'max:20'],
+            'email' => ['bail', 'required', 'string','regex:/^([a-zA-Z0-9])+([a-zA-Z0-9\._-])*@([a-zA-Z0-9_-])+([a-zA-Z0-9\._-]+)+$/', 'email', 'max:255', 'unique:users'],
+            'password' => ['bail', 'required', 'regex:/^[A-Za-z0-9]*$/', 'between:8,16', 'confirmed'],
+            'tel_1' => ['bail', 'required', 'string', 'numeric', 'digits_between:1,5'],
+            'tel_2' => ['bail', 'required', 'string', 'numeric', 'digits_between:1,5'],
+            'tel_3' => ['bail', 'required', 'string', 'numeric', 'digits_between:1,5'],
+            'role' => ['bail', 'required', 'in:1,2']
         ]);
 
         $user = User::create([
-            'name' => $request->name,
+            'login_id' => $request->login_id,
+            'emp_no' => $request->emp_no,
+            'last_name' => $request->last_name,
+            'first_name' => $request->first_name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
+            'tel' => $request->tel_1.$request->tel_2.$request->tel_3,
+            'role' => $request->role,
         ]);
 
-        event(new Registered($user));
+        // event(new Registered($user));
 
-        Auth::login($user);
+        // Auth::login($user);
 
-        return redirect(RouteServiceProvider::HOME);
+        return redirect('account');
     }
 }

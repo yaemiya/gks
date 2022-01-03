@@ -1,0 +1,92 @@
+.dropdwn_menu {
+  zoom: 1;
+  background-color: black;
+  border: small solid whitesmoke;
+  text-align: center;
+}
+
+.dropdwn_menu li {
+  float: left;
+  width: 200px;
+  height: 42px;
+  position: relative;
+  list-style-type: none;
+  border-top: 1px solid whitesmoke;
+  border-right: 1px solid whitesmoke;
+}
+
+.dropdwn_menu:first-child{
+  border-left: 1px solid whitesmoke;
+}
+
+.dropdwn_menu li:hover{
+  background-color: rgb(77, 77, 77);
+}
+
+* html .dropdwn_menu li {
+  display: inline;
+  zoom: 1;
+}
+
+*+html .dropdwn_menu li {
+  display: inline;
+  zoom: 1;
+}
+
+.dropdwn_menu a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 42px;
+  font-weight: bold;
+  color: whitesmoke;
+  text-decoration: none;
+  position: relative;
+}
+
+.dropdwn_menu ul.sub2 {
+  display: none;
+  background-color: black;
+}
+
+* html .dropdwn_menu ul.sub2 {
+  zoom: 1;
+  position: relative;
+}
+
+*+html .dropdwn_menu ul.sub2 {
+  zoom: 1;
+  position: relative;
+}
+
+.dropdwn_menu ul.sub2 li {
+  float: none;
+}
+
+.dropdwn_menu ul.sub2 li ul.sub2 {
+  position: absolute;
+  left: 200px;
+  top: 0;
+}
+
+.dropdwn_menu:after {
+  height: 0;
+  visibility: hidden;
+  content: ".";
+  display: block;
+  clear: both;
+}
+
+.triangle_down {
+  border-top: solid 8px whitesmoke;
+  border-right: solid 8px transparent;
+  border-left: solid 8px transparent;
+  border-bottom: solid 8px transparent;
+}
+
+.triangle_right {
+  border-left: solid 8px whitesmoke;
+  border-right: solid 8px transparent;
+  border-top: solid 8px transparent;
+  border-bottom: solid 8px transparent;
+}

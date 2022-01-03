@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+
+.registerBtn {
+    @apply py-1 px-4 mb-1 rounded;
+}
+
+.editBtn {
+    @apply py-1 px-4 mt- rounded;
+}

@@ -1,0 +1,54 @@
+{
+    "sourceFile": "resources/views/layouts/guest.blade.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 9,
+            "patches": [
+                {
+                    "date": 1638583229969,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1638583253267,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n         <script src=\"{{ asset('js/app.js') }}\" defer></script>\n         <script src=\"{{ mix('js/auth.js') }}\"></script>\n     </head>\n     <body>\n-        <div class=\"font-sans antialiased min-w-full\">\n+        <div class=\"font-sans text-gray-900 antialiased min-w-full\">\n             {{ $slot }}\n         </div>\n     </body>\n </html>\n"
+                },
+                {
+                    "date": 1638583267917,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n         <script src=\"{{ asset('js/app.js') }}\" defer></script>\n         <script src=\"{{ mix('js/auth.js') }}\"></script>\n     </head>\n     <body>\n-        <div class=\"font-sans text-gray-900 antialiased min-w-full\">\n+        <div class=\"font-sans text-gray-900 antialiased \">\n             {{ $slot }}\n         </div>\n     </body>\n </html>\n"
+                },
+                {
+                    "date": 1638583277619,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,5 +21,5 @@\n         <div class=\"font-sans text-gray-900 antialiased \">\n             {{ $slot }}\n         </div>\n     </body>\n-</html>\n+</html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1639632865481,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,12 +14,12 @@\n         <link rel=\"stylesheet\" href=\"{{ asset('css/app.css') }}\">\n \n         <!-- Scripts -->\n         <script src=\"{{ asset('js/app.js') }}\" defer></script>\n-        <script src=\"{{ mix('js/auth.js') }}\"></script>\n+        <script src=\"{{ mix('js/.js') }}\"></script>\n     </head>\n     <body>\n-        <div class=\"font-sans text-gray-900 antialiased \">\n+        <div class=\"font-sans text-gray-900 antialiased min-w-full\">\n             {{ $slot }}\n         </div>\n\\ No newline at end of file\n     </body>\n-</html>\n+</html>\n"
+                },
+                {
+                    "date": 1639633123748,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,12 +14,12 @@\n         <link rel=\"stylesheet\" href=\"{{ asset('css/app.css') }}\">\n \n         <!-- Scripts -->\n         <script src=\"{{ asset('js/app.js') }}\" defer></script>\n-        <script src=\"{{ mix('js/.js') }}\"></script>\n+        <script src=\"{{ mix('js/auth.js') }}\"></script>\n     </head>\n     <body>\n         <div class=\"font-sans text-gray-900 antialiased min-w-full\">\n             {{ $slot }}\n         </div>\n     </body>\n\\ No newline at end of file\n-</html>\n+</html>\n"
+                },
+                {
+                    "date": 1639633131645,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,11 +15,12 @@\n \n         <!-- Scripts -->\n         <script src=\"{{ asset('js/app.js') }}\" defer></script>\n         <script src=\"{{ mix('js/auth.js') }}\"></script>\n+        <script src=\"{{ mix('js/auth.js') }}\"></script>\n     </head>\n     <body>\n         <div class=\"font-sans text-gray-900 antialiased min-w-full\">\n             {{ $slot }}\n         </div>\n     </body>\n\\ No newline at end of file\n-</html>\n+</html>\n"
+                },
+                {
+                    "date": 1639633161490,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,12 +15,11 @@\n \n         <!-- Scripts -->\n         <script src=\"{{ asset('js/app.js') }}\" defer></script>\n         <script src=\"{{ mix('js/auth.js') }}\"></script>\n-        <script src=\"{{ mix('js/auth.js') }}\"></script>\n     </head>\n     <body>\n         <div class=\"font-sans text-gray-900 antialiased min-w-full\">\n             {{ $slot }}\n         </div>\n     </body>\n-</html>\n\\ No newline at end of file\n+</html>\n"
+                },
+                {
+                    "date": 1639633652872,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,9 @@\n \n         <!-- Scripts -->\n         <script src=\"{{ asset('js/app.js') }}\" defer></script>\n         <script src=\"{{ mix('js/auth.js') }}\"></script>\n+        <script src=\"{{ mix('js/auth.js') }}\"></script>\n     </head>\n     <body>\n         <div class=\"font-sans text-gray-900 antialiased min-w-full\">\n             {{ $slot }}\n"
+                },
+                {
+                    "date": 1639659559683,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,10 +14,9 @@\n         <link rel=\"stylesheet\" href=\"{{ asset('css/app.css') }}\">\n \n         <!-- Scripts -->\n         <script src=\"{{ asset('js/app.js') }}\" defer></script>\n-        <script src=\"{{ mix('js/auth.js') }}\"></script>\n-        <script src=\"{{ mix('js/auth.js') }}\"></script>\n+        <script src=\"{{ mix('js/auth-check.js') }}\"></script>\n     </head>\n     <body>\n         <div class=\"font-sans text-gray-900 antialiased min-w-full\">\n             {{ $slot }}\n"
+                }
+            ],
+            "date": 1638583229969,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\n<html lang=\"{{ str_replace('_', '-', app()->getLocale()) }}\">\n    <head>\n        <meta charset=\"utf-8\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n        <meta name=\"csrf-token\" content=\"{{ csrf_token() }}\">\n\n        <title>{{ config('app.name', 'Laravel') }}</title>\n\n        <!-- Fonts -->\n        <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap\">\n\n        <!-- Styles -->\n        <link rel=\"stylesheet\" href=\"{{ asset('css/app.css') }}\">\n\n        <!-- Scripts -->\n        <script src=\"{{ asset('js/app.js') }}\" defer></script>\n        <script src=\"{{ mix('js/auth.js') }}\"></script>\n    </head>\n    <body>\n        <div class=\"font-sans antialiased min-w-full\">\n            {{ $slot }}\n        </div>\n    </body>\n</html>\n"
+        }
+    ]
+}

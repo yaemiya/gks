@@ -1,0 +1,126 @@
+{
+    "sourceFile": "resources/views/account/detail.blade.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 27,
+            "patches": [
+                {
+                    "date": 1639811078410,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1639811103278,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,9 @@\n     <div class=\"container\">\r\n         <div class=\"title\">ユーザー一覧</div>\r\n         <div class=\"text-right\">\r\n             <button id=\"registerBtn\" class=\"btn btn-green\">新規登録</button>\r\n+            <button id=\"registerBtn\" class=\"btn btn-green\">新規登録</button>\r\n         </div>\r\n         <table width=\"1000\">\r\n             <thead>\r\n                 <tr class=\"tr\">\r\n"
+                },
+                {
+                    "date": 1639811114220,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,10 +13,10 @@\n     <p class=\"pageView\">アカウント ＞ 一覧</p>\r\n     <div class=\"container\">\r\n         <div class=\"title\">ユーザー一覧</div>\r\n         <div class=\"text-right\">\r\n+            <button id=\"registerBtn\" class=\"btn btn-green\"></button>\r\n             <button id=\"registerBtn\" class=\"btn btn-green\">新規登録</button>\r\n-            <button id=\"registerBtn\" class=\"btn btn-green\">新規登録</button>\r\n         </div>\r\n         <table width=\"1000\">\r\n             <thead>\r\n                 <tr class=\"tr\">\r\n"
+                },
+                {
+                    "date": 1639811121558,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n     <p class=\"pageView\">アカウント ＞ 一覧</p>\r\n     <div class=\"container\">\r\n         <div class=\"title\">ユーザー一覧</div>\r\n         <div class=\"text-right\">\r\n-            <button id=\"registerBtn\" class=\"btn btn-green\"></button>\r\n+            <button id=\"registerBtn\" class=\"btn btn-green\">編集</button>\r\n             <button id=\"registerBtn\" class=\"btn btn-green\">新規登録</button>\r\n         </div>\r\n         <table width=\"1000\">\r\n             <thead>\r\n"
+                },
+                {
+                    "date": 1639811127539,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n     <div class=\"container\">\r\n         <div class=\"title\">ユーザー一覧</div>\r\n         <div class=\"text-right\">\r\n             <button id=\"registerBtn\" class=\"btn btn-green\">編集</button>\r\n-            <button id=\"registerBtn\" class=\"btn btn-green\">新規登録</button>\r\n+            <button id=\"registerBtn\" class=\"btn btn-green\">削除</button>\r\n         </div>\r\n         <table width=\"1000\">\r\n             <thead>\r\n                 <tr class=\"tr\">\r\n"
+                },
+                {
+                    "date": 1639811168697,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n     <p class=\"pageView\">アカウント ＞ 一覧</p>\r\n     <div class=\"container\">\r\n         <div class=\"title\">ユーザー一覧</div>\r\n         <div class=\"text-right\">\r\n-            <button id=\"registerBtn\" class=\"btn btn-green\">編集</button>\r\n+            <button id=\"editBtn\" class=\"btn btn-green\">編集</button>\r\n             <button id=\"registerBtn\" class=\"btn btn-green\">削除</button>\r\n         </div>\r\n         <table width=\"1000\">\r\n             <thead>\r\n"
+                },
+                {
+                    "date": 1639811175269,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n     <div class=\"container\">\r\n         <div class=\"title\">ユーザー一覧</div>\r\n         <div class=\"text-right\">\r\n             <button id=\"editBtn\" class=\"btn btn-green\">編集</button>\r\n-            <button id=\"registerBtn\" class=\"btn btn-green\">削除</button>\r\n+            <button id=\"deleteBtn\" class=\"btn btn-green\">削除</button>\r\n         </div>\r\n         <table width=\"1000\">\r\n             <thead>\r\n                 <tr class=\"tr\">\r\n"
+                },
+                {
+                    "date": 1639811180915,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n     <div class=\"container\">\r\n         <div class=\"title\">ユーザー一覧</div>\r\n         <div class=\"text-right\">\r\n             <button id=\"editBtn\" class=\"btn btn-green\">編集</button>\r\n-            <button id=\"deleteBtn\" class=\"btn btn-green\">削除</button>\r\n+            <button id=\"deleteBtn\" class=\"btn btn-red\">削除</button>\r\n         </div>\r\n         <table width=\"1000\">\r\n             <thead>\r\n                 <tr class=\"tr\">\r\n"
+                },
+                {
+                    "date": 1639811459319,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,8 +31,9 @@\n             <tr class=\"tr\">\r\n                 <td class=\"td\">{{ $user->user_id }}</td>\r\n                 <td class=\"td\">{{ $user->emp_no }}</td>\r\n                 <td class=\"td\">{{ $user->last_name . ' ' . $user->first_name }}</td>\r\n+                \r\n                 <td class=\"td\">{{ $user->role }}</td>\r\n             </tr>\r\n             @endforeach\r\n         </tbody>\r\n"
+                },
+                {
+                    "date": 1639811466185,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n             <tr class=\"tr\">\r\n                 <td class=\"td\">{{ $user->user_id }}</td>\r\n                 <td class=\"td\">{{ $user->emp_no }}</td>\r\n                 <td class=\"td\">{{ $user->last_name . ' ' . $user->first_name }}</td>\r\n-                \r\n+                @if\r\n                 <td class=\"td\">{{ $user->role }}</td>\r\n             </tr>\r\n             @endforeach\r\n         </tbody>\r\n"
+                },
+                {
+                    "date": 1639811471790,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n             <tr class=\"tr\">\r\n                 <td class=\"td\">{{ $user->user_id }}</td>\r\n                 <td class=\"td\">{{ $user->emp_no }}</td>\r\n                 <td class=\"td\">{{ $user->last_name . ' ' . $user->first_name }}</td>\r\n-                @if\r\n+                @if()\r\n                 <td class=\"td\">{{ $user->role }}</td>\r\n             </tr>\r\n             @endforeach\r\n         </tbody>\r\n"
+                },
+                {
+                    "date": 1639811497221,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n             <tr class=\"tr\">\r\n                 <td class=\"td\">{{ $user->user_id }}</td>\r\n                 <td class=\"td\">{{ $user->emp_no }}</td>\r\n                 <td class=\"td\">{{ $user->last_name . ' ' . $user->first_name }}</td>\r\n-                @if()\r\n+                @if($user->role ==)\r\n                 <td class=\"td\">{{ $user->role }}</td>\r\n             </tr>\r\n             @endforeach\r\n         </tbody>\r\n"
+                },
+                {
+                    "date": 1639811502996,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n             <tr class=\"tr\">\r\n                 <td class=\"td\">{{ $user->user_id }}</td>\r\n                 <td class=\"td\">{{ $user->emp_no }}</td>\r\n                 <td class=\"td\">{{ $user->last_name . ' ' . $user->first_name }}</td>\r\n-                @if($user->role ==)\r\n+                @if($user->role === '1')\r\n                 <td class=\"td\">{{ $user->role }}</td>\r\n             </tr>\r\n             @endforeach\r\n         </tbody>\r\n"
+                },
+                {
+                    "date": 1639811521428,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n                 <td class=\"td\">{{ $user->user_id }}</td>\r\n                 <td class=\"td\">{{ $user->emp_no }}</td>\r\n                 <td class=\"td\">{{ $user->last_name . ' ' . $user->first_name }}</td>\r\n                 @if($user->role === '1')\r\n-                <td class=\"td\">{{ $user->role }}</td>\r\n+                <td class=\"td\">管理</td>\r\n             </tr>\r\n             @endforeach\r\n         </tbody>\r\n         </table>\r\n"
+                },
+                {
+                    "date": 1639811528739,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,8 +33,9 @@\n                 <td class=\"td\">{{ $user->emp_no }}</td>\r\n                 <td class=\"td\">{{ $user->last_name . ' ' . $user->first_name }}</td>\r\n                 @if($user->role === '1')\r\n                 <td class=\"td\">管理</td>\r\n+                @else\r\n             </tr>\r\n             @endforeach\r\n         </tbody>\r\n         </table>\r\n"
+                },
+                {
+                    "date": 1639811536791,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,8 +34,12 @@\n                 <td class=\"td\">{{ $user->last_name . ' ' . $user->first_name }}</td>\r\n                 @if($user->role === '1')\r\n                 <td class=\"td\">管理</td>\r\n                 @else\r\n+                    \r\n+                @else\r\n+                    \r\n+                @endif\r\n             </tr>\r\n             @endforeach\r\n         </tbody>\r\n         </table>\r\n"
+                },
+                {
+                    "date": 1639811584613,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,10 +33,14 @@\n                 <td class=\"td\">{{ $user->emp_no }}</td>\r\n                 <td class=\"td\">{{ $user->last_name . ' ' . $user->first_name }}</td>\r\n                 @if($user->role === '1')\r\n                 <td class=\"td\">管理</td>\r\n+                @\r\n+                    \r\n                 @else\r\n                     \r\n+                @endif\r\n+                    \r\n                 @else\r\n                     \r\n                 @endif\r\n             </tr>\r\n"
+                },
+                {
+                    "date": 1639811593507,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,17 +33,21 @@\n                 <td class=\"td\">{{ $user->emp_no }}</td>\r\n                 <td class=\"td\">{{ $user->last_name . ' ' . $user->first_name }}</td>\r\n                 @if($user->role === '1')\r\n                 <td class=\"td\">管理</td>\r\n-                @\r\n+                \r\n                     \r\n                 @else\r\n                     \r\n                 @endif\r\n                     \r\n                 @else\r\n                     \r\n                 @endif\r\n+                    \r\n+                @else\r\n+                    \r\n+                @endif\r\n             </tr>\r\n             @endforeach\r\n         </tbody>\r\n         </table>\r\n"
+                },
+                {
+                    "date": 1639811617671,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,12 +33,9 @@\n                 <td class=\"td\">{{ $user->emp_no }}</td>\r\n                 <td class=\"td\">{{ $user->last_name . ' ' . $user->first_name }}</td>\r\n                 @if($user->role === '1')\r\n                 <td class=\"td\">管理</td>\r\n-                \r\n-                    \r\n                 @else\r\n-                    \r\n                 @endif\r\n                     \r\n                 @else\r\n                     \r\n"
+                },
+                {
+                    "date": 1639811633385,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,16 +35,8 @@\n                 @if($user->role === '1')\r\n                 <td class=\"td\">管理</td>\r\n                 @else\r\n                 @endif\r\n-                    \r\n-                @else\r\n-                    \r\n-                @endif\r\n-                    \r\n-                @else\r\n-                    \r\n-                @endif\r\n             </tr>\r\n             @endforeach\r\n         </tbody>\r\n         </table>\r\n"
+                },
+                {
+                    "date": 1639811642550,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n                 <td class=\"td\">{{ $user->emp_no }}</td>\r\n                 <td class=\"td\">{{ $user->last_name . ' ' . $user->first_name }}</td>\r\n                 @if($user->role === '1')\r\n                 <td class=\"td\">管理</td>\r\n-                @else\r\n+                @\r\n                 @endif\r\n             </tr>\r\n             @endforeach\r\n         </tbody>\r\n"
+                },
+                {
+                    "date": 1639811649774,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,10 @@\n                 <td class=\"td\">{{ $user->emp_no }}</td>\r\n                 <td class=\"td\">{{ $user->last_name . ' ' . $user->first_name }}</td>\r\n                 @if($user->role === '1')\r\n                 <td class=\"td\">管理</td>\r\n-                @\r\n+                @else\r\n+                \r\n                 @endif\r\n             </tr>\r\n             @endforeach\r\n         </tbody>\r\n"
+                },
+                {
+                    "date": 1639811656111,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n                 <td class=\"td\">{{ $user->last_name . ' ' . $user->first_name }}</td>\r\n                 @if($user->role === '1')\r\n                 <td class=\"td\">管理</td>\r\n                 @else\r\n-                \r\n+                <td class\r\n                 @endif\r\n             </tr>\r\n             @endforeach\r\n         </tbody>\r\n"
+                },
+                {
+                    "date": 1639811663554,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n                 <td class=\"td\">{{ $user->last_name . ' ' . $user->first_name }}</td>\r\n                 @if($user->role === '1')\r\n                 <td class=\"td\">管理</td>\r\n                 @else\r\n-                <td class\r\n+                <td class=\"td\"></td>\r\n                 @endif\r\n             </tr>\r\n             @endforeach\r\n         </tbody>\r\n"
+                },
+                {
+                    "date": 1639811684490,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,22 +25,22 @@\n                     <th class=\"th\">ユーザー名</th>\r\n                     <th class=\"th\">権限</th>\r\n                 </tr>\r\n             </thead>\r\n-        <tbody class=\"tbody\">\r\n-            @foreach ($users as $user)\r\n-            <tr class=\"tr\">\r\n-                <td class=\"td\">{{ $user->user_id }}</td>\r\n-                <td class=\"td\">{{ $user->emp_no }}</td>\r\n-                <td class=\"td\">{{ $user->last_name . ' ' . $user->first_name }}</td>\r\n-                @if($user->role === '1')\r\n-                <td class=\"td\">管理</td>\r\n-                @else\r\n-                <td class=\"td\"></td>\r\n-                @endif\r\n-            </tr>\r\n-            @endforeach\r\n-        </tbody>\r\n+            <tbody class=\"tbody\">\r\n+                @foreach ($users as $user)\r\n+                    <tr class=\"tr\">\r\n+                        <td class=\"td\">{{ $user->user_id }}</td>\r\n+                        <td class=\"td\">{{ $user->emp_no }}</td>\r\n+                        <td class=\"td\">{{ $user->last_name . ' ' . $user->first_name }}</td>\r\n+                        @if ($user->role === '1')\r\n+                            <td class=\"td\">管理</td>\r\n+                        @else\r\n+                            <td class=\"td\">閲覧</td>\r\n+                        @endif\r\n+                    </tr>\r\n+                @endforeach\r\n+            </tbody>\r\n         </table>\r\n     </div>\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1639831874013,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,13 +31,8 @@\n                     <tr class=\"tr\">\r\n                         <td class=\"td\">{{ $user->user_id }}</td>\r\n                         <td class=\"td\">{{ $user->emp_no }}</td>\r\n                         <td class=\"td\">{{ $user->last_name . ' ' . $user->first_name }}</td>\r\n-                        @if ($user->role === '1')\r\n-                            <td class=\"td\">管理</td>\r\n-                        @else\r\n-                            <td class=\"td\">閲覧</td>\r\n-                        @endif\r\n                     </tr>\r\n                 @endforeach\r\n             </tbody>\r\n         </table>\r\n"
+                },
+                {
+                    "date": 1639837696353,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n                 @foreach ($users as $user)\r\n                     <tr class=\"tr\">\r\n                         <td class=\"td\">{{ $user->user_id }}</td>\r\n                         <td class=\"td\">{{ $user->emp_no }}</td>\r\n-                        <td class=\"td\"><あ{{ $user->last_name . ' ' . $user->first_name }}</td>\r\n+                        <td class=\"td\"><{{ $user->last_name . ' ' . $user->first_name }}</td>\r\n                     </tr>\r\n                 @endforeach\r\n             </tbody>\r\n         </table>\r\n"
+                },
+                {
+                    "date": 1639866414253,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n             <button id=\"deleteBtn\" class=\"btn btn-red\">削除</button>\r\n         </div>\r\n         <table width=\"1000\">\r\n             <tr>\r\n-                <th>ゆーざーID </th>\r\n+                <th>ゆーざーID</th>\r\n             </tr>\r\n         </table>\r\n     </div>\r\n \r\n"
+                }
+            ],
+            "date": 1639811078410,
+            "name": "Commit-0",
+            "content": "@extends('layouts.app')\r\n\r\n@section('style')\r\n    <link rel=\"stylesheet\" href=\"{{ asset('css/account.css') }}\">\r\n@endsection\r\n\r\n@section('script')\r\n    <script src=\"{{ asset('js/account.js') }}\" defer></script>\r\n@endsection\r\n\r\n@section('content')\r\n\r\n    <p class=\"pageView\">アカウント ＞ 一覧</p>\r\n    <div class=\"container\">\r\n        <div class=\"title\">ユーザー一覧</div>\r\n        <div class=\"text-right\">\r\n            <button id=\"registerBtn\" class=\"btn btn-green\">新規登録</button>\r\n        </div>\r\n        <table width=\"1000\">\r\n            <thead>\r\n                <tr class=\"tr\">\r\n                    <th class=\"th\">ユーザーID</th>\r\n                    <th class=\"th\">社員番号</th>\r\n                    <th class=\"th\">ユーザー名</th>\r\n                    <th class=\"th\">権限</th>\r\n                </tr>\r\n            </thead>\r\n        <tbody class=\"tbody\">\r\n            @foreach ($users as $user)\r\n            <tr class=\"tr\">\r\n                <td class=\"td\">{{ $user->user_id }}</td>\r\n                <td class=\"td\">{{ $user->emp_no }}</td>\r\n                <td class=\"td\">{{ $user->last_name . ' ' . $user->first_name }}</td>\r\n                <td class=\"td\">{{ $user->role }}</td>\r\n            </tr>\r\n            @endforeach\r\n        </tbody>\r\n        </table>\r\n    </div>\r\n\r\n\r\n@endsection\r\n"
+        }
+    ]
+}

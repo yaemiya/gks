@@ -1,0 +1,130 @@
+{
+    "sourceFile": "resources/css/header.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 28,
+            "patches": [
+                {
+                    "date": 1638886166250,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1639059346218,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,8 @@\n .info_2116 li {\r\n     float: left;\r\n     width: 179px;\r\n     height: 48px;\r\n-    background: url(\"../images/ani_btn.png\");\r\n     position: relative;\r\n     list-style-type: none;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1639059548071,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,11 +31,8 @@\n     text-decoration: none;\r\n     position: relative;\r\n }\r\n \r\n-.info_2116 li a:hover {\r\n-    background: url(\"../images/ani_btn_over.png\");\r\n-}\r\n \r\n .info_2116 ul.sub2 {\r\n     display: none;\r\n }\r\n"
+                },
+                {
+                    "date": 1639263993911,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n     display: inline;\r\n     zoom: 1;\r\n }\r\n \r\n-.info_2116 li a {\r\n+.f a {\r\n     display: block;\r\n     width: 100%;\r\n     height: 100%;\r\n     line-height: 48px;\r\n"
+                },
+                {
+                    "date": 1639264001970,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n     display: inline;\r\n     zoom: 1;\r\n }\r\n \r\n-.f a {\r\n+. a {\r\n     display: block;\r\n     width: 100%;\r\n     height: 100%;\r\n     line-height: 48px;\r\n"
+                },
+                {
+                    "date": 1639264023300,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,27 +1,27 @@\n-.info_2116 {\r\n+.menu {\r\n     zoom: 1;\r\n }\r\n \r\n-.info_2116 li {\r\n+.menu li {\r\n     float: left;\r\n     width: 179px;\r\n     height: 48px;\r\n     position: relative;\r\n     list-style-type: none;\r\n }\r\n \r\n-* html .info_2116 li {\r\n+* html .menu li {\r\n     display: inline;\r\n     zoom: 1;\r\n }\r\n \r\n-*+html .info_2116 li {\r\n+*+html .menu li {\r\n     display: inline;\r\n     zoom: 1;\r\n }\r\n \r\n-. a {\r\n+.menu a {\r\n     display: block;\r\n     width: 100%;\r\n     height: 100%;\r\n     line-height: 48px;\r\n@@ -32,33 +32,33 @@\n     position: relative;\r\n }\r\n \r\n \r\n-.info_2116 ul.sub2 {\r\n+.menu ul.sub2 {\r\n     display: none;\r\n }\r\n \r\n-* html .info_2116 ul.sub2 {\r\n+* html .menu ul.sub2 {\r\n     zoom: 1;\r\n     position: relative;\r\n }\r\n \r\n-*+html .info_2116 ul.sub2 {\r\n+*+html .menu ul.sub2 {\r\n     zoom: 1;\r\n     position: relative;\r\n }\r\n \r\n-.info_2116 ul.sub2 li {\r\n+.menu ul.sub2 li {\r\n     float: none;\r\n }\r\n \r\n-.info_2116 ul.sub2 li ul.sub2 {\r\n+.menu ul.sub2 li ul.sub2 {\r\n     position: absolute;\r\n     left: 179px;\r\n     top: 0;\r\n }\r\n \r\n-.info_2116:after {\r\n+.menu:after {\r\n     height: 0;\r\n     visibility: hidden;\r\n     content: \".\";\r\n     display: block;\r\n"
+                },
+                {
+                    "date": 1639281750957,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n .menu {\r\n     zoom: 1;\r\n+    ba\r\n }\r\n \r\n .menu li {\r\n     float: left;\r\n"
+                },
+                {
+                    "date": 1639281760770,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n .menu {\r\n     zoom: 1;\r\n-    ba\r\n+    backgound-color:\r\n }\r\n \r\n .menu li {\r\n     float: left;\r\n"
+                },
+                {
+                    "date": 1639281766634,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n .menu {\r\n     zoom: 1;\r\n-    backgound-color:\r\n+    backgound-color: \r\n }\r\n \r\n .menu li {\r\n     float: left;\r\n"
+                },
+                {
+                    "date": 1639281775367,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n .menu {\r\n     zoom: 1;\r\n-    backgound-color: \r\n+    backgound-color: black;\r\n }\r\n \r\n .menu li {\r\n     float: left;\r\n"
+                },
+                {
+                    "date": 1639281785043,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n .menu {\r\n     zoom: 1;\r\n-    backgound-color: black;\r\n+    background-color: black;\r\n }\r\n \r\n .menu li {\r\n     float: left;\r\n"
+                },
+                {
+                    "date": 1639282209921,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,13 +15,8 @@\n     display: inline;\r\n     zoom: 1;\r\n }\r\n \r\n-*+html .menu li {\r\n-    display: inline;\r\n-    zoom: 1;\r\n-}\r\n-\r\n .menu a {\r\n     display: block;\r\n     width: 100%;\r\n     height: 100%;\r\n"
+                },
+                {
+                    "date": 1639282235271,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,18 +32,13 @@\n .menu ul.sub2 {\r\n     display: none;\r\n }\r\n \r\n-* html .menu ul.sub2 {\r\n+.menu ul.sub2 {\r\n     zoom: 1;\r\n     position: relative;\r\n }\r\n \r\n-*+html .menu ul.sub2 {\r\n-    zoom: 1;\r\n-    position: relative;\r\n-}\r\n-\r\n .menu ul.sub2 li {\r\n     float: none;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1639282258050,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     position: relative;\r\n     list-style-type: none;\r\n }\r\n \r\n-* html .menu li {\r\n+.menu li {\r\n     display: inline;\r\n     zoom: 1;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1639282331938,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n     width: 179px;\r\n     height: 48px;\r\n     position: relative;\r\n     list-style-type: none;\r\n+    background-color: black;\r\n }\r\n \r\n .menu li {\r\n     display: inline;\r\n"
+                },
+                {
+                    "date": 1639282344851,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,8 @@\n     width: 179px;\r\n     height: 48px;\r\n     position: relative;\r\n     list-style-type: none;\r\n-    background-color: black;\r\n }\r\n \r\n .menu li {\r\n     display: inline;\r\n"
+                },
+                {
+                    "date": 1639282383258,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,8 +30,9 @@\n \r\n \r\n .menu ul.sub2 {\r\n     display: none;\r\n+    background-color: black;\r\n }\r\n \r\n .menu ul.sub2 {\r\n     zoom: 1;\r\n"
+                },
+                {
+                    "date": 1639282420035,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,8 @@\n \r\n \r\n .menu ul.sub2 {\r\n     display: none;\r\n-    background-color: black;\r\n }\r\n \r\n .menu ul.sub2 {\r\n     zoom: 1;\r\n"
+                },
+                {
+                    "date": 1639282426297,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,13 +10,14 @@\n     position: relative;\r\n     list-style-type: none;\r\n }\r\n \r\n-.menu li {\r\n+* html .menu li {\r\n     display: inline;\r\n     zoom: 1;\r\n }\r\n \r\n+\r\n .menu a {\r\n     display: block;\r\n     width: 100%;\r\n     height: 100%;\r\n@@ -32,13 +33,18 @@\n .menu ul.sub2 {\r\n     display: none;\r\n }\r\n \r\n-.menu ul.sub2 {\r\n+* html .menu ul.sub2 {\r\n     zoom: 1;\r\n     position: relative;\r\n }\r\n \r\n+*+html .menu ul.sub2 {\r\n+    zoom: 1;\r\n+    position: relative;\r\n+}\r\n+\r\n .menu ul.sub2 li {\r\n     float: none;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1639282432118,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n .menu {\r\n     zoom: 1;\r\n-    background-color: black;\r\n+    back\r\n }\r\n \r\n .menu li {\r\n     float: left;\r\n@@ -15,8 +15,12 @@\n     display: inline;\r\n     zoom: 1;\r\n }\r\n \r\n+*+html .menu li {\r\n+    display: inline;\r\n+    zoom: 1;\r\n+}\r\n \r\n .menu a {\r\n     display: block;\r\n     width: 100%;\r\n"
+                },
+                {
+                    "date": 1639282438439,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n .menu {\r\n     zoom: 1;\r\n-    back\r\n+    background\r\n }\r\n \r\n .menu li {\r\n     float: left;\r\n"
+                },
+                {
+                    "date": 1639282457353,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n .menu {\r\n     zoom: 1;\r\n-    background\r\n+    background-color:black;\r\n }\r\n \r\n .menu li {\r\n     float: left;\r\n"
+                },
+                {
+                    "date": 1639282462760,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n .menu {\r\n     zoom: 1;\r\n-    background-color:black;\r\n+    background-color: black;\r\n }\r\n \r\n .menu li {\r\n     float: left;\r\n"
+                },
+                {
+                    "date": 1639282473775,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,8 +35,9 @@\n \r\n \r\n .menu ul.sub2 {\r\n     display: none;\r\n+    background-color: black;\r\n }\r\n \r\n * html .menu ul.sub2 {\r\n     zoom: 1;\r\n"
+                },
+                {
+                    "date": 1639282520827,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n     height: 100%;\r\n     line-height: 48px;\r\n     text-indent: 30px;\r\n     font-weight: bold;\r\n-    color: #CFDFB5;\r\n+    color: white;\r\n     text-decoration: none;\r\n     position: relative;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1639283177082,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,28 +1,28 @@\n-.menu {\r\n+.dropdwn_menu {\r\n     zoom: 1;\r\n     background-color: black;\r\n }\r\n \r\n-.menu li {\r\n+.dropdwn_menu li {\r\n     float: left;\r\n     width: 179px;\r\n     height: 48px;\r\n     position: relative;\r\n     list-style-type: none;\r\n }\r\n \r\n-* html .menu li {\r\n+* html .dropdwn_menu li {\r\n     display: inline;\r\n     zoom: 1;\r\n }\r\n \r\n-*+html .menu li {\r\n+*+html .dropdwn_menu li {\r\n     display: inline;\r\n     zoom: 1;\r\n }\r\n \r\n-.menu a {\r\n+.dropdwn_menu a {\r\n     display: block;\r\n     width: 100%;\r\n     height: 100%;\r\n     line-height: 48px;\r\n@@ -33,34 +33,34 @@\n     position: relative;\r\n }\r\n \r\n \r\n-.menu ul.sub2 {\r\n+.dropdwn_menu ul.sub2 {\r\n     display: none;\r\n     background-color: black;\r\n }\r\n \r\n-* html .menu ul.sub2 {\r\n+* html .dropdwn_menu ul.sub2 {\r\n     zoom: 1;\r\n     position: relative;\r\n }\r\n \r\n-*+html .menu ul.sub2 {\r\n+*+html .dropdwn_menu ul.sub2 {\r\n     zoom: 1;\r\n     position: relative;\r\n }\r\n \r\n-.menu ul.sub2 li {\r\n+.dropdwn_menu ul.sub2 li {\r\n     float: none;\r\n }\r\n \r\n-.menu ul.sub2 li ul.sub2 {\r\n+.dropdwn_menu ul.sub2 li ul.sub2 {\r\n     position: absolute;\r\n     left: 179px;\r\n     top: 0;\r\n }\r\n \r\n-.menu:after {\r\n+.dropdwn_menu:after {\r\n     height: 0;\r\n     visibility: hidden;\r\n     content: \".\";\r\n     display: block;\r\n"
+                },
+                {
+                    "date": 1639283676583,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,9 @@\n     position: relative;\r\n     list-style-type: none;\r\n }\r\n \r\n+\r\n * html .dropdwn_menu li {\r\n     display: inline;\r\n     zoom: 1;\r\n }\r\n"
+                },
+                {
+                    "date": 1639283689863,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     position: relative;\r\n     list-style-type: none;\r\n }\r\n \r\n-.dropdwn_menu\r\n+.dropdwn_menu:\r\n \r\n * html .dropdwn_menu li {\r\n     display: inline;\r\n     zoom: 1;\r\n"
+                },
+                {
+                    "date": 1639283823193,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .dropdwn_menu {\r\n     zoom: 1;\r\n     background-color: black;\r\n-    text-\r\n+    text-a\r\n }\r\n \r\n .dropdwn_menu li {\r\n     float: left;\r\n"
+                }
+            ],
+            "date": 1638886166250,
+            "name": "Commit-0",
+            "content": ".info_2116 {\r\n    zoom: 1;\r\n}\r\n\r\n.info_2116 li {\r\n    float: left;\r\n    width: 179px;\r\n    height: 48px;\r\n    background: url(\"../images/ani_btn.png\");\r\n    position: relative;\r\n    list-style-type: none;\r\n}\r\n\r\n* html .info_2116 li {\r\n    display: inline;\r\n    zoom: 1;\r\n}\r\n\r\n*+html .info_2116 li {\r\n    display: inline;\r\n    zoom: 1;\r\n}\r\n\r\n.info_2116 li a {\r\n    display: block;\r\n    width: 100%;\r\n    height: 100%;\r\n    line-height: 48px;\r\n    text-indent: 30px;\r\n    font-weight: bold;\r\n    color: #CFDFB5;\r\n    text-decoration: none;\r\n    position: relative;\r\n}\r\n\r\n.info_2116 li a:hover {\r\n    background: url(\"../images/ani_btn_over.png\");\r\n}\r\n\r\n.info_2116 ul.sub2 {\r\n    display: none;\r\n}\r\n\r\n* html .info_2116 ul.sub2 {\r\n    zoom: 1;\r\n    position: relative;\r\n}\r\n\r\n*+html .info_2116 ul.sub2 {\r\n    zoom: 1;\r\n    position: relative;\r\n}\r\n\r\n.info_2116 ul.sub2 li {\r\n    float: none;\r\n}\r\n\r\n.info_2116 ul.sub2 li ul.sub2 {\r\n    position: absolute;\r\n    left: 179px;\r\n    top: 0;\r\n}\r\n\r\n.info_2116:after {\r\n    height: 0;\r\n    visibility: hidden;\r\n    content: \".\";\r\n    display: block;\r\n    clear: both;\r\n}"
+        }
+    ]
+}

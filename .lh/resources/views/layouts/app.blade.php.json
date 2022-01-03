@@ -1,0 +1,126 @@
+{
+    "sourceFile": "resources/views/layouts/app.blade.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 27,
+            "patches": [
+                {
+                    "date": 1638883149121,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1638883415761,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n                 <div class=\"max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8\">\n                     {{ $header }}\n                 </div>\n             </header>\n-sssssssssssssssssssss\n+\n             <!-- Page Content -->\n             <main>\n                 {{ $slot }}\n             </main>\n"
+                },
+                {
+                    "date": 1638885874148,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,9 @@\n         <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap\">\n \n         <!-- Styles -->\n         <link rel=\"stylesheet\" href=\"{{ asset('css/app.css') }}\">\n+        <link rel=\"stylesheet\" href=\"{{ asset('css/app.css') }}\">\n \n         <!-- Scripts -->\n         <script src=\"{{ asset('js/app.js') }}\" defer></script>\n     </head>\n"
+                },
+                {
+                    "date": 1638885882836,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n         <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap\">\n \n         <!-- Styles -->\n         <link rel=\"stylesheet\" href=\"{{ asset('css/app.css') }}\">\n-        <link rel=\"stylesheet\" href=\"{{ asset('css/app.css') }}\">\n+        <link rel=\"stylesheet\" href=\"{{ asset('css/header.css') }}\">\n \n         <!-- Scripts -->\n         <script src=\"{{ asset('js/app.js') }}\" defer></script>\n     </head>\n"
+                },
+                {
+                    "date": 1638885893118,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,9 @@\n         <link rel=\"stylesheet\" href=\"{{ asset('css/header.css') }}\">\n \n         <!-- Scripts -->\n         <script src=\"{{ asset('js/app.js') }}\" defer></script>\n+        <script src=\"{{ asset('js/app.js') }}\" defer></script>\n     </head>\n     <body class=\"font-sans antialiased\">\n         <div class=\"min-h-screen bg-gray-100\">\n             @include('layouts.navigation')\n"
+                },
+                {
+                    "date": 1638885902054,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n         <link rel=\"stylesheet\" href=\"{{ asset('css/header.css') }}\">\n \n         <!-- Scripts -->\n         <script src=\"{{ asset('js/app.js') }}\" defer></script>\n-        <script src=\"{{ asset('js/app.js') }}\" defer></script>\n+        <script src=\"{{ asset('js/header.js') }}\" defer></script>\n     </head>\n     <body class=\"font-sans antialiased\">\n         <div class=\"min-h-screen bg-gray-100\">\n             @include('layouts.navigation')\n"
+                },
+                {
+                    "date": 1638886945471,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n         <link rel=\"stylesheet\" href=\"{{ asset('css/header.css') }}\">\n \n         <!-- Scripts -->\n         <script src=\"{{ asset('js/app.js') }}\" defer></script>\n-        <script src=\"{{ asset('js/header.js') }}\" defer></script>\n+        <script src=\"{{ asset('js/header.js') }}\"></script>\n     </head>\n     <body class=\"font-sans antialiased\">\n         <div class=\"min-h-screen bg-gray-100\">\n             @include('layouts.navigation')\n"
+                },
+                {
+                    "date": 1638886997789,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n         <link rel=\"stylesheet\" href=\"{{ asset('css/header.css') }}\">\n \n         <!-- Scripts -->\n         <script src=\"{{ asset('js/app.js') }}\" defer></script>\n-        <script src=\"{{ asset('js/header.js') }}\"></script>\n+        <script src=\"{{ asset('js/header.js') }}\"defer></script>\n     </head>\n     <body class=\"font-sans antialiased\">\n         <div class=\"min-h-screen bg-gray-100\">\n             @include('layouts.navigation')\n"
+                },
+                {
+                    "date": 1638887005281,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,15 +15,15 @@\n         <link rel=\"stylesheet\" href=\"{{ asset('css/header.css') }}\">\n \n         <!-- Scripts -->\n         <script src=\"{{ asset('js/app.js') }}\" defer></script>\n-        <script src=\"{{ asset('js/header.js') }}\"defer></script>\n+        <script src=\"{{ asset('js/header.js') }}\" defer></script>\n     </head>\n     <body class=\"font-sans antialiased\">\n         <div class=\"min-h-screen bg-gray-100\">\n             @include('layouts.navigation')\n \n-            <!-- Page Heading -->\n+            <!-- Page Heading --> \n             <header class=\"bg-white shadow\">\n                 <div class=\"max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8\">\n                     {{ $header }}\n                 </div>\n"
+                },
+                {
+                    "date": 1638970140251,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,9 @@\n         <link rel=\"stylesheet\" href=\"{{ asset('css/app.css') }}\">\n         <link rel=\"stylesheet\" href=\"{{ asset('css/header.css') }}\">\n \n         <!-- Scripts -->\n+        \n         <script src=\"{{ asset('js/app.js') }}\" defer></script>\n         <script src=\"{{ asset('js/header.js') }}\" defer></script>\n     </head>\n     <body class=\"font-sans antialiased\">\n"
+                },
+                {
+                    "date": 1638970185393,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n         <link rel=\"stylesheet\" href=\"{{ asset('css/app.css') }}\">\n         <link rel=\"stylesheet\" href=\"{{ asset('css/header.css') }}\">\n \n         <!-- Scripts -->\n-        \n+        <script src=\"{{ mix('js/app.js') }}\"></script><script src=\"{{ mix('js/app.js') }}\"></script>\n         <script src=\"{{ asset('js/app.js') }}\" defer></script>\n         <script src=\"{{ asset('js/header.js') }}\" defer></script>\n     </head>\n     <body class=\"font-sans antialiased\">\n"
+                },
+                {
+                    "date": 1638970192206,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,11 +14,12 @@\n         <link rel=\"stylesheet\" href=\"{{ asset('css/app.css') }}\">\n         <link rel=\"stylesheet\" href=\"{{ asset('css/header.css') }}\">\n \n         <!-- Scripts -->\n-        <script src=\"{{ mix('js/app.js') }}\"></script><script src=\"{{ mix('js/app.js') }}\"></script>\n-        <script src=\"{{ asset('js/app.js') }}\" defer></script>\n-        <script src=\"{{ asset('js/header.js') }}\" defer></script>\n+        <script src=\"{{ mix('js/app.js') }}\"></script>\n+        <script src=\"{{ mix('js/app.js') }}\"></script>\n+        <!-- <script src=\"{{ asset('js/app.js') }}\" defer></script>\n+        <script src=\"{{ asset('js/header.js') }}\" defer></script> -->\n     </head>\n     <body class=\"font-sans antialiased\">\n         <div class=\"min-h-screen bg-gray-100\">\n             @include('layouts.navigation')\n"
+                },
+                {
+                    "date": 1638970197825,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,40 @@\n+<!DOCTYPE html>\n+<html lang=\"{{ str_replace('_', '-', app()->getLocale()) }}\">\n+    <head>\n+        <meta charset=\"utf-8\">\n+        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n+        <meta name=\"csrf-token\" content=\"{{ csrf_token() }}\">\n+\n+        <title>{{ config('app.name', 'Laravel') }}</title>\n+\n+        <!-- Fonts -->\n+        <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap\">\n+\n+        <!-- Styles -->\n+        <link rel=\"stylesheet\" href=\"{{ asset('css/app.css') }}\">\n+        <link rel=\"stylesheet\" href=\"{{ asset('css/header.css') }}\">\n+\n+        <!-- Scripts -->\n+        <script src=\"{{ mix('js/app.js') }}\"></script>\n+        <script src=\"{{ mix('js/.js') }}\"></script>\n+        <!-- <script src=\"{{ asset('js/app.js') }}\" defer></script>\n+        <script src=\"{{ asset('js/header.js') }}\" defer></script> -->\n+    </head>\n+    <body class=\"font-sans antialiased\">\n+        <div class=\"min-h-screen bg-gray-100\">\n+            @include('layouts.navigation')\n+\n+            <!-- Page Heading --> \n+            <header class=\"bg-white shadow\">\n+                <div class=\"max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8\">\n+                    {{ $header }}\n+                </div>\n+            </header>\n+\n+            <!-- Page Content -->\n+            <main>\n+                {{ $slot }}\n+            </main>\n+        </div>\n+    </body>\n+</html>\n"
+                },
+                {
+                    "date": 1638970271043,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,12 +15,9 @@\n         <link rel=\"stylesheet\" href=\"{{ asset('css/header.css') }}\">\n \n         <!-- Scripts -->\n         <script src=\"{{ mix('js/app.js') }}\"></script>\n-        <script src=\"{{ mix('js/.js') }}\"></script>\n-        <!-- <script src=\"{{ asset('js/app.js') }}\" defer></script>\n-        <script src=\"{{ asset('js/header.js') }}\" defer></script> -->\n-    </head>\n+        <script src=\"{{ mix('js/header.js') }}\"></script>\n     <body class=\"font-sans antialiased\">\n         <div class=\"min-h-screen bg-gray-100\">\n             @include('layouts.navigation')\n \n@@ -37,44 +34,4 @@\n             </main>\n         </div>\n     </body>\n </html>\n-<!DOCTYPE html>\n-<html lang=\"{{ str_replace('_', '-', app()->getLocale()) }}\">\n-    <head>\n-        <meta charset=\"utf-8\">\n-        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n-        <meta name=\"csrf-token\" content=\"{{ csrf_token() }}\">\n-\n-        <title>{{ config('app.name', 'Laravel') }}</title>\n-\n-        <!-- Fonts -->\n-        <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap\">\n-\n-        <!-- Styles -->\n-        <link rel=\"stylesheet\" href=\"{{ asset('css/app.css') }}\">\n-        <link rel=\"stylesheet\" href=\"{{ asset('css/header.css') }}\">\n-\n-        <!-- Scripts -->\n-        <script src=\"{{ mix('js/app.js') }}\"></script>\n-        <script src=\"{{ mix('js/app.js') }}\"></script>\n-        <!-- <script src=\"{{ asset('js/app.js') }}\" defer></script>\n-        <script src=\"{{ asset('js/header.js') }}\" defer></script> -->\n-    </head>\n-    <body class=\"font-sans antialiased\">\n-        <div class=\"min-h-screen bg-gray-100\">\n-            @include('layouts.navigation')\n-\n-            <!-- Page Heading --> \n-            <header class=\"bg-white shadow\">\n-                <div class=\"max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8\">\n-                    {{ $header }}\n-                </div>\n-            </header>\n-\n-            <!-- Page Content -->\n-            <main>\n-                {{ $slot }}\n-            </main>\n-        </div>\n-    </body>\n-</html>\n"
+                },
+                {
+                    "date": 1638970290898,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,9 @@\n \n         <!-- Scripts -->\n         <script src=\"{{ mix('js/app.js') }}\"></script>\n         <script src=\"{{ mix('js/header.js') }}\"></script>\n+    </head>\n     <body class=\"font-sans antialiased\">\n         <div class=\"min-h-screen bg-gray-100\">\n             @include('layouts.navigation')\n \n"
+                },
+                {
+                    "date": 1638970296178,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,10 @@\n         <link rel=\"stylesheet\" href=\"{{ asset('css/app.css') }}\">\n         <link rel=\"stylesheet\" href=\"{{ asset('css/header.css') }}\">\n \n         <!-- Scripts -->\n+        <script src=\"{{ asset('js/app.js') }}\" defer></script>\n+        <script src=\"{{ asset('js/header.js') }}\" defer></script>\n         <script src=\"{{ mix('js/app.js') }}\"></script>\n         <script src=\"{{ mix('js/header.js') }}\"></script>\n     </head>\n     <body class=\"font-sans antialiased\">\n"
+                },
+                {
+                    "date": 1638972086967,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,10 @@\n         <script src=\"{{ asset('js/app.js') }}\" defer></script>\n         <script src=\"{{ asset('js/header.js') }}\" defer></script>\n         <script src=\"{{ mix('js/app.js') }}\"></script>\n         <script src=\"{{ mix('js/header.js') }}\"></script>\n+        <script src=\"{{ asset('js/app.js') }}\" defer></script>\n+        <script src=\"{{ mix('js/auth.js') }}\"></script>\n     </head>\n     <body class=\"font-sans antialiased\">\n         <div class=\"min-h-screen bg-gray-100\">\n             @include('layouts.navigation')\n"
+                },
+                {
+                    "date": 1638973206886,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,10 +18,8 @@\n         <script src=\"{{ asset('js/app.js') }}\" defer></script>\n         <script src=\"{{ asset('js/header.js') }}\" defer></script>\n         <script src=\"{{ mix('js/app.js') }}\"></script>\n         <script src=\"{{ mix('js/header.js') }}\"></script>\n-        <script src=\"{{ asset('js/app.js') }}\" defer></script>\n-        <script src=\"{{ mix('js/auth.js') }}\"></script>\n     </head>\n     <body class=\"font-sans antialiased\">\n         <div class=\"min-h-screen bg-gray-100\">\n             @include('layouts.navigation')\n"
+                },
+                {
+                    "date": 1638976989944,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,8 @@\n         <!-- Scripts -->\n         <script src=\"{{ asset('js/app.js') }}\" defer></script>\n         <script src=\"{{ asset('js/header.js') }}\" defer></script>\n         <script src=\"{{ mix('js/app.js') }}\"></script>\n-        <script src=\"{{ mix('js/header.js') }}\"></script>\n     </head>\n     <body class=\"font-sans antialiased\">\n         <div class=\"min-h-screen bg-gray-100\">\n             @include('layouts.navigation')\n"
+                },
+                {
+                    "date": 1638977276248,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,9 @@\n         <link rel=\"stylesheet\" href=\"{{ asset('css/app.css') }}\">\n         <link rel=\"stylesheet\" href=\"{{ asset('css/header.css') }}\">\n \n         <!-- Scripts -->\n+        <!-- <script src=\"{{ mix('js/header.js') }}\"></script> -->\n         <script src=\"{{ asset('js/app.js') }}\" defer></script>\n         <script src=\"{{ asset('js/header.js') }}\" defer></script>\n         <script src=\"{{ mix('js/app.js') }}\"></script>\n     </head>\n"
+                },
+                {
+                    "date": 1638977282736,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n \n         <!-- Scripts -->\n         <!-- <script src=\"{{ mix('js/header.js') }}\"></script> -->\n         <script src=\"{{ asset('js/app.js') }}\" defer></script>\n-        <script src=\"{{ asset('js/header.js') }}\" defer></script>\n+        <!-- <script src=\"{{ asset('js/header.js') }}\" defer></script> -->\n         <script src=\"{{ mix('js/app.js') }}\"></script>\n     </head>\n     <body class=\"font-sans antialiased\">\n         <div class=\"min-h-screen bg-gray-100\">\n"
+                },
+                {
+                    "date": 1638977470830,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,8 @@\n         <link rel=\"stylesheet\" href=\"{{ asset('css/app.css') }}\">\n         <link rel=\"stylesheet\" href=\"{{ asset('css/header.css') }}\">\n \n         <!-- Scripts -->\n-        <!-- <script src=\"{{ mix('js/header.js') }}\"></script> -->\n         <script src=\"{{ asset('js/app.js') }}\" defer></script>\n         <!-- <script src=\"{{ asset('js/header.js') }}\" defer></script> -->\n         <script src=\"{{ mix('js/app.js') }}\"></script>\n     </head>\n"
+                },
+                {
+                    "date": 1638978011591,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,10 +15,10 @@\n         <link rel=\"stylesheet\" href=\"{{ asset('css/header.css') }}\">\n \n         <!-- Scripts -->\n         <script src=\"{{ asset('js/app.js') }}\" defer></script>\n-        <!-- <script src=\"{{ asset('js/header.js') }}\" defer></script> -->\n         <script src=\"{{ mix('js/app.js') }}\"></script>\n+        <script src=\"{{ asset('js/app.js') }}\" defer></script>\n     </head>\n     <body class=\"font-sans antialiased\">\n         <div class=\"min-h-screen bg-gray-100\">\n             @include('layouts.navigation')\n"
+                },
+                {
+                    "date": 1638978018671,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n \n         <!-- Scripts -->\n         <script src=\"{{ asset('js/app.js') }}\" defer></script>\n         <script src=\"{{ mix('js/app.js') }}\"></script>\n-        <script src=\"{{ asset('js/app.js') }}\" defer></script>\n+        <script src=\"{{ asset('js/header.js') }}\" defer></script>\n     </head>\n     <body class=\"font-sans antialiased\">\n         <div class=\"min-h-screen bg-gray-100\">\n             @include('layouts.navigation')\n"
+                },
+                {
+                    "date": 1638978060915,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n \n         <!-- Scripts -->\n         <script src=\"{{ asset('js/app.js') }}\" defer></script>\n         <script src=\"{{ mix('js/app.js') }}\"></script>\n-        <script src=\"{{ asset('js/header.js') }}\" defer></script>\n+        <script src=\"{{ asset('js/header.js') }}\"></script>\n     </head>\n     <body class=\"font-sans antialiased\">\n         <div class=\"min-h-screen bg-gray-100\">\n             @include('layouts.navigation')\n"
+                },
+                {
+                    "date": 1638978167817,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,20 +11,17 @@\n         <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap\">\n \n         <!-- Styles -->\n         <link rel=\"stylesheet\" href=\"{{ asset('css/app.css') }}\">\n-        <link rel=\"stylesheet\" href=\"{{ asset('css/header.css') }}\">\n \n         <!-- Scripts -->\n         <script src=\"{{ asset('js/app.js') }}\" defer></script>\n-        <script src=\"{{ mix('js/app.js') }}\"></script>\n-        <script src=\"{{ asset('js/header.js') }}\"></script>\n     </head>\n     <body class=\"font-sans antialiased\">\n         <div class=\"min-h-screen bg-gray-100\">\n             @include('layouts.navigation')\n \n-            <!-- Page Heading --> \n+            <!-- Page Heading -->\n             <header class=\"bg-white shadow\">\n                 <div class=\"max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8\">\n                     {{ $header }}\n                 </div>\n"
+                },
+                {
+                    "date": 1638978197434,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n                 <div class=\"max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8\">\n                     {{ $header }}\n                 </div>\n             </header>\n-sssssssssssssssssssss\n+\n             <!-- Page Content -->\n             <main>\n                 {{ $slot }}\n             </main>\n"
+                },
+                {
+                    "date": 1638978237295,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n         <link rel=\"stylesheet\" href=\"{{ asset('css/header.css') }}\">\n \n         <!-- Scripts -->\n         <script src=\"{{ asset('js/app.js') }}\" defer></script>\n-        <script src=\"{{ asset('js/.js') }}\" defer></script>\n+        <script src=\"{{ asset('js/h.js') }}\" defer></script>\n     </head>\n     <body class=\"font-sans antialiased\">\n         <div class=\"min-h-screen bg-gray-100\">\n             @include('layouts.navigation')\n"
+                }
+            ],
+            "date": 1638883149121,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\n<html lang=\"{{ str_replace('_', '-', app()->getLocale()) }}\">\n    <head>\n        <meta charset=\"utf-8\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n        <meta name=\"csrf-token\" content=\"{{ csrf_token() }}\">\n\n        <title>{{ config('app.name', 'Laravel') }}</title>\n\n        <!-- Fonts -->\n        <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap\">\n\n        <!-- Styles -->\n        <link rel=\"stylesheet\" href=\"{{ asset('css/app.css') }}\">\n\n        <!-- Scripts -->\n        <script src=\"{{ asset('js/app.js') }}\" defer></script>\n    </head>\n    <body class=\"font-sans antialiased\">\n        <div class=\"min-h-screen bg-gray-100\">\n            @include('layouts.navigation')\n\n            <!-- Page Heading -->\n            <header class=\"bg-white shadow\">\n                <div class=\"max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8\">\n                    {{ $header }}\n                </div>\n            </header>\nsssssssssssssssssssss\n            <!-- Page Content -->\n            <main>\n                {{ $slot }}\n            </main>\n        </div>\n    </body>\n</html>\n"
+        }
+    ]
+}

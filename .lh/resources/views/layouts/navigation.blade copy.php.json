@@ -1,0 +1,26 @@
+{
+    "sourceFile": "resources/views/layouts/navigation.blade copy.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1639277688270,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1639277811779,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n                     ログインID：{{ Auth::user()->login_id }}\n                 </div>\n             </div>\n             <div>\n-                \n+                <\n                 <!-- Authentication -->\n                 <form method=\"POST\" action=\"{{ route('logout') }}\">\n                     @csrf\n                     <x-responsive-nav-link :href=\"route('logout')\" onclick=\"event.preventDefault();\n"
+                },
+                {
+                    "date": 1639278016220,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n             <div>\n                 <!-- Authentication -->\n                 <form method=\"POST\" action=\"{{ route('logout') }}\">\n                     @csrf\n-                    \n+                    <\n                     <x-responsive-nav-link :href=\"route('logout')\" onclick=\"event.preventDefault();\n                         this.closest('form').submit();\">\n                         {{ __('Log Out') }}\n                     </x-responsive-nav-link>\n"
+                }
+            ],
+            "date": 1639277688270,
+            "name": "Commit-0",
+            "content": "<nav x-data=\"{ open: false }\" class=\"bg-white border-b border-gray-100\">\n    <!-- Primary Navigation Menu -->\n    <div class=\"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8\">\n        <div class=\"flex pt-4 pb-1 border-t border-gray-200\">\n            <div class=\"px-4 mt-2\">\n                <div class=\"font-small text-gray-800\">\n                    ログインID：{{ Auth::user()->login_id }}\n                </div>\n            </div>\n            <div>\n                <!-- Authentication -->\n                <form method=\"POST\" action=\"{{ route('logout') }}\">\n                    @csrf\n                    <x-responsive-nav-link :href=\"route('logout')\" onclick=\"event.preventDefault();\n                        this.closest('form').submit();\">\n                        {{ __('Log Out') }}\n                    </x-responsive-nav-link>\n                </form>\n            </div>\n        </div>\n        <div class=\"flex justify-between h-16\">\n            <div class=\"flex\">\n                <ul class=\"menu\">\n                    <li><a href=\"#\">メニューA</a>\n                        <ul class=\"sub2\">\n                            <li><a href=\"#\">サブメニューA</a></li>\n                            <li><a href=\"#\">サブメニューA</a></li>\n                            <li><a href=\"#\">サブメニューA</a>\n                                <ul class=\"sub2\">\n                                    <li><a href=\"#\">サブメニューA2</a></li>\n                                    <li><a href=\"#\">サブメニューA2</a></li>\n                                    <li><a href=\"#\">サブメニューA2</a></li>\n                                </ul>\n                            </li>\n                        </ul>\n                    </li>\n                    <li><a href=\"#\">メニューB</a>\n                        <ul class=\"sub2\">\n                            <li><a href=\"#\">サブメニューB</a></li>\n                            <li><a href=\"#\">サブメニューB</a>\n                                <ul class=\"sub2\">\n                                    <li><a href=\"#\">サブメニューB2</a></li>\n                                    <li><a href=\"#\">サブメニューB2</a></li>\n                                    <li><a href=\"#\">サブメニューB2</a>\n                                        <ul class=\"sub2\">\n                                            <li><a href=\"#\">サブメニューB3</a></li>\n                                            <li><a href=\"#\">サブメニューB3</a></li>\n                                            <li><a href=\"#\">サブメニューB3</a></li>\n                                        </ul>\n                                    </li>\n                                </ul>\n                            </li>\n                            <li><a href=\"#\">サブメニューB</a></li>\n                        </ul>\n                    </li>\n                </ul>\n            </div>\n        </div>\n    </div>\n</nav>\n"
+        }
+    ]
+}

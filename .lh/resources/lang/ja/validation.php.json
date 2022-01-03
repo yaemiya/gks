@@ -1,0 +1,122 @@
+{
+    "sourceFile": "resources/lang/ja/validation.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 26,
+            "patches": [
+                {
+                    "date": 1638668087460,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1638668095241,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -136,7 +136,7 @@\n         'name' => '名前',\n         'email' => 'メールアドレス',\n         'login_id' => 'ログインID',\n         'password' => 'パスワード'\n-        \n+        'tel_1' =\n     ],\n ];\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638668102084,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -136,7 +136,7 @@\n         'name' => '名前',\n         'email' => 'メールアドレス',\n         'login_id' => 'ログインID',\n         'password' => 'パスワード'\n-        'tel_1' =\n+        'tel_1' => '電話番号'\n     ],\n ];\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638668143383,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -135,8 +135,8 @@\n     'attributes'           => [\n         'name' => '名前',\n         'email' => 'メールアドレス',\n         'login_id' => 'ログインID',\n-        'password' => 'パスワード'\n-        'tel_1' => '電話番号'\n+        'password' => 'パスワード',\n+        'tel_1' => '電話番号',\n     ],\n ];\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638668149434,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -137,6 +137,8 @@\n         'email' => 'メールアドレス',\n         'login_id' => 'ログインID',\n         'password' => 'パスワード',\n         'tel_1' => '電話番号',\n+        'tel_1' => '電話番号',\n+        'tel_1' => '電話番号',\n     ],\n ];\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638668180488,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -138,7 +138,7 @@\n         'login_id' => 'ログインID',\n         'password' => 'パスワード',\n         'tel_1' => '電話番号',\n         'tel_1' => '電話番号',\n-        'tel_1' => '電話番号',\n+        'tel_1' => '電話番号'\n     ],\n ];\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638668187717,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -136,9 +136,9 @@\n         'name' => '名前',\n         'email' => 'メールアドレス',\n         'login_id' => 'ログインID',\n         'password' => 'パスワード',\n+        'tel_1' => 'ひとｔ電話番号',\n         'tel_1' => '電話番号',\n-        'tel_1' => '電話番号',\n         'tel_1' => '電話番号'\n     ],\n ];\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638668200493,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -136,9 +136,9 @@\n         'name' => '名前',\n         'email' => 'メールアドレス',\n         'login_id' => 'ログインID',\n         'password' => 'パスワード',\n-        'tel_1' => 'ひとｔ電話番号',\n         'tel_1' => '電話番号',\n+        'tel_1' => '電話番号',\n         'tel_1' => '電話番号'\n     ],\n ];\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638668206152,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -136,9 +136,9 @@\n         'name' => '名前',\n         'email' => 'メールアドレス',\n         'login_id' => 'ログインID',\n         'password' => 'パスワード',\n+        'tel_1' => '1番目の電話番号',\n         'tel_1' => '電話番号',\n-        'tel_1' => '電話番号',\n         'tel_1' => '電話番号'\n     ],\n ];\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638668239304,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -105,9 +105,9 @@\n     'prohibited_unless'    => ':attributeフィールドは、:otherが:valuesでない限り禁止されています。',\n     'prohibits'            => 'The :attribute field prohibits :other from being present.',\n     'regex'                => ':attributeには、有効な正規表現を指定してください。',\n     'relatable'            => 'この:attributeきない場合に伴い資源です。',\n-    'required'             => ':attributeは、必ず指定してください。',\n+    'required'             => ':attributeを入力してください。',\n     'required_if'          => ':otherが:valueの場合、:attributeを指定してください。',\n     'required_unless'      => ':otherが:values以外の場合、:attributeを指定してください。',\n     'required_with'        => ':valuesが指定されている場合、:attributeも指定してください。',\n     'required_with_all'    => ':valuesが全て指定されている場合、:attributeも指定してください。',\n"
+                },
+                {
+                    "date": 1638668263307,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -137,8 +137,8 @@\n         'email' => 'メールアドレス',\n         'login_id' => 'ログインID',\n         'password' => 'パスワード',\n         'tel_1' => '1番目の電話番号',\n-        'tel_1' => '電話番号',\n+        'tel_1' => '番目電話番号',\n         'tel_1' => '電話番号'\n     ],\n ];\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638668270143,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -137,8 +137,8 @@\n         'email' => 'メールアドレス',\n         'login_id' => 'ログインID',\n         'password' => 'パスワード',\n         'tel_1' => '1番目の電話番号',\n-        'tel_1' => '番目電話番号',\n-        'tel_1' => '電話番号'\n+        'tel_1' => '2番目電話番号',\n+        'tel_1' => '3番目電話番号'\n     ],\n ];\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638668283769,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -132,9 +132,9 @@\n             'rule-name' => 'custom-message',\n         ],\n     ],\n     'attributes'           => [\n-        'name' => '名前',\n+        'last_name' => '名前',\n         'email' => 'メールアドレス',\n         'login_id' => 'ログインID',\n         'password' => 'パスワード',\n         'tel_1' => '1番目の電話番号',\n"
+                },
+                {
+                    "date": 1638668291038,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -133,8 +133,9 @@\n         ],\n     ],\n     'attributes'           => [\n         'last_name' => '名前',\n+        'last_name' => '名前',\n         'email' => 'メールアドレス',\n         'login_id' => 'ログインID',\n         'password' => 'パスワード',\n         'tel_1' => '1番目の電話番号',\n"
+                },
+                {
+                    "date": 1638668296376,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -133,9 +133,9 @@\n         ],\n     ],\n     'attributes'           => [\n         'last_name' => '名前',\n-        'last_name' => '名前',\n+        'first_name' => '名前',\n         'email' => 'メールアドレス',\n         'login_id' => 'ログインID',\n         'password' => 'パスワード',\n         'tel_1' => '1番目の電話番号',\n"
+                },
+                {
+                    "date": 1638668301975,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -132,9 +132,9 @@\n             'rule-name' => 'custom-message',\n         ],\n     ],\n     'attributes'           => [\n-        'last_name' => '名前',\n+        'last_name' => '姓',\n         'first_name' => '名前',\n         'email' => 'メールアドレス',\n         'login_id' => 'ログインID',\n         'password' => 'パスワード',\n"
+                },
+                {
+                    "date": 1638668313252,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -133,13 +133,13 @@\n         ],\n     ],\n     'attributes'           => [\n         'last_name' => '姓',\n-        'first_name' => '名前',\n+        'first_name' => '名',\n         'email' => 'メールアドレス',\n         'login_id' => 'ログインID',\n         'password' => 'パスワード',\n         'tel_1' => '1番目の電話番号',\n-        'tel_1' => '2番目電話番号',\n+        'tel_1' => '2番目の電話番号',\n         'tel_1' => '3番目電話番号'\n     ],\n ];\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638668346646,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -138,8 +138,8 @@\n         'email' => 'メールアドレス',\n         'login_id' => 'ログインID',\n         'password' => 'パスワード',\n         'tel_1' => '1番目の電話番号',\n-        'tel_1' => '2番目の電話番号',\n-        'tel_1' => '3番目電話番号'\n+        'tel_２' => '2番目の電話番号',\n+        'tel_1' => '3番目の電話番号'\n     ],\n ];\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638668352470,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -138,8 +138,8 @@\n         'email' => 'メールアドレス',\n         'login_id' => 'ログインID',\n         'password' => 'パスワード',\n         'tel_1' => '1番目の電話番号',\n-        'tel_２' => '2番目の電話番号',\n-        'tel_1' => '3番目の電話番号'\n+        'tel_2' => '2番目の電話番号',\n+        'tel_3' => '3番目の電話番号'\n     ],\n ];\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638668429082,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -137,9 +137,9 @@\n         'first_name' => '名',\n         'email' => 'メールアドレス',\n         'login_id' => 'ログインID',\n         'password' => 'パスワード',\n-        'tel_1' => '1番目の電話番号',\n+        'tel_1' => '1番目電話番号',\n         'tel_2' => '2番目の電話番号',\n         'tel_3' => '3番目の電話番号'\n     ],\n ];\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638668435353,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -137,9 +137,9 @@\n         'first_name' => '名',\n         'email' => 'メールアドレス',\n         'login_id' => 'ログインID',\n         'password' => 'パスワード',\n-        'tel_1' => '1番目電話番号',\n+        'tel_1' => '1番目ボックスに電話番号',\n         'tel_2' => '2番目の電話番号',\n         'tel_3' => '3番目の電話番号'\n     ],\n ];\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638668445855,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -138,8 +138,8 @@\n         'email' => 'メールアドレス',\n         'login_id' => 'ログインID',\n         'password' => 'パスワード',\n         'tel_1' => '1番目ボックスに電話番号',\n-        'tel_2' => '2番目の電話番号',\n+        'tel_2' => '2番目ボックスに電話番号',\n         'tel_3' => '3番目の電話番号'\n     ],\n ];\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638668629568,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -137,9 +137,9 @@\n         'first_name' => '名',\n         'email' => 'メールアドレス',\n         'login_id' => 'ログインID',\n         'password' => 'パスワード',\n-        'tel_1' => '1番目ボックスに電話番号',\n+        'tel_1' => '1番目ボックスｍｐ電話番号',\n         'tel_2' => '2番目ボックスに電話番号',\n-        'tel_3' => '3番目の電話番号'\n+        'tel_3' => '3番目ボックスに電話番号'\n     ],\n ];\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638668635536,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -137,9 +137,9 @@\n         'first_name' => '名',\n         'email' => 'メールアドレス',\n         'login_id' => 'ログインID',\n         'password' => 'パスワード',\n-        'tel_1' => '1番目ボックスｍｐ電話番号',\n+        'tel_1' => '1番目ボックスの電話番号',\n         'tel_2' => '2番目ボックスに電話番号',\n         'tel_3' => '3番目ボックスに電話番号'\n     ],\n ];\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638668643776,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -138,8 +138,8 @@\n         'email' => 'メールアドレス',\n         'login_id' => 'ログインID',\n         'password' => 'パスワード',\n         'tel_1' => '1番目ボックスの電話番号',\n-        'tel_2' => '2番目ボックスに電話番号',\n-        'tel_3' => '3番目ボックスに電話番号'\n+        'tel_2' => '2番目ボックスの電話番号',\n+        'tel_3' => '3番目ボックスの電話番号'\n     ],\n ];\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638669512305,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -139,7 +139,7 @@\n         'login_id' => 'ログインID',\n         'password' => 'パスワード',\n         'tel_1' => '1番目ボックスの電話番号',\n         'tel_2' => '2番目ボックスの電話番号',\n-        'tel_3' => '3番目ボックスの電話番号'\n+        'tel_3' => '3番目ボックスの電話番号',\n     ],\n ];\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638669519188,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -140,7 +140,7 @@\n         'password' => 'パスワード',\n         'tel_1' => '1番目ボックスの電話番号',\n         'tel_2' => '2番目ボックスの電話番号',\n         'tel_3' => '3番目ボックスの電話番号',\n-        'role' =\n+        'role' =>\n     ],\n ];\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1638668087460,
+            "name": "Commit-0",
+            "content": "<?php\n\n/*\n|--------------------------------------------------------------------------\n| Validation Language Lines\n|--------------------------------------------------------------------------\n|\n| The following language lines contain the default error messages used by\n| the validator class. Some of these rules have multiple versions such\n| as the size rules. Feel free to tweak each of these messages here.\n|\n*/\n\nreturn [\n    'accepted'             => ':attributeを承認してください。',\n    'accepted_if'          => 'The :attribute must be accepted when :other is :value.',\n    'active_url'           => ':attributeは、有効なURLではありません。',\n    'after'                => ':attributeには、:dateより後の日付を指定してください。',\n    'after_or_equal'       => ':attributeには、:date以降の日付を指定してください。',\n    'alpha'                => ':attributeには、アルファベッドのみ使用できます。',\n    'alpha_dash'           => ':attributeには、英数字(\\'A-Z\\',\\'a-z\\',\\'0-9\\')とハイフンと下線(\\'-\\',\\'_\\')が使用できます。',\n    'alpha_num'            => ':attributeには、英数字(\\'A-Z\\',\\'a-z\\',\\'0-9\\')が使用できます。',\n    'array'                => ':attributeには、配列を指定してください。',\n    'attached'             => 'この:attributeはすでに添付されています。',\n    'before'               => ':attributeには、:dateより前の日付を指定してください。',\n    'before_or_equal'      => ':attributeには、:date以前の日付を指定してください。',\n    'between'              => [\n        'array'   => ':attributeの項目は、:min個から:max個にしてください。',\n        'file'    => ':attributeには、:min KBから:max KBまでのサイズのファイルを指定してください。',\n        'numeric' => ':attributeには、:minから、:maxまでの数字を指定してください。',\n        'string'  => ':attributeは、:min文字から:max文字にしてください。',\n    ],\n    'boolean'              => ':attributeには、\\'true\\'か\\'false\\'を指定してください。',\n    'confirmed'            => ':attributeと:attribute確認が一致しません。',\n    'current_password'     => 'The password is incorrect.',\n    'date'                 => ':attributeは、正しい日付ではありません。',\n    'date_equals'          => ':attributeは:dateに等しい日付でなければなりません。',\n    'date_format'          => ':attributeの形式は、\\':format\\'と合いません。',\n    'declined'             => 'The :attribute must be declined.',\n    'declined_if'          => 'The :attribute must be declined when :other is :value.',\n    'different'            => ':attributeと:otherには、異なるものを指定してください。',\n    'digits'               => ':attributeは、:digits桁にしてください。',\n    'digits_between'       => ':attributeは、:min桁から:max桁にしてください。',\n    'dimensions'           => ':attributeの画像サイズが無効です',\n    'distinct'             => ':attributeの値が重複しています。',\n    'email'                => ':attributeは、有効なメールアドレス形式で指定してください。',\n    'ends_with'            => ':attributeは、次のうちのいずれかで終わらなければなりません。: :values',\n    'exists'               => '選択された:attributeは、有効ではありません。',\n    'file'                 => ':attributeはファイルでなければいけません。',\n    'filled'               => ':attributeは必須です。',\n    'gt'                   => [\n        'array'   => ':attributeの項目数は、:value個より大きくなければなりません。',\n        'file'    => ':attributeは、:value KBより大きくなければなりません。',\n        'numeric' => ':attributeは、:valueより大きくなければなりません。',\n        'string'  => ':attributeは、:value文字より大きくなければなりません。',\n    ],\n    'gte'                  => [\n        'array'   => ':attributeの項目数は、:value個以上でなければなりません。',\n        'file'    => ':attributeは、:value KB以上でなければなりません。',\n        'numeric' => ':attributeは、:value以上でなければなりません。',\n        'string'  => ':attributeは、:value文字以上でなければなりません。',\n    ],\n    'image'                => ':attributeには、画像を指定してください。',\n    'in'                   => '選択された:attributeは、有効ではありません。',\n    'in_array'             => ':attributeが:otherに存在しません。',\n    'integer'              => ':attributeには、整数を指定してください。',\n    'ip'                   => ':attributeには、有効なIPアドレスを指定してください。',\n    'ipv4'                 => ':attributeはIPv4アドレスを指定してください。',\n    'ipv6'                 => ':attributeはIPv6アドレスを指定してください。',\n    'json'                 => ':attributeには、有効なJSON文字列を指定してください。',\n    'lt'                   => [\n        'array'   => ':attributeの項目数は、:value個より小さくなければなりません。',\n        'file'    => ':attributeは、:value KBより小さくなければなりません。',\n        'numeric' => ':attributeは、:valueより小さくなければなりません。',\n        'string'  => ':attributeは、:value文字より小さくなければなりません。',\n    ],\n    'lte'                  => [\n        'array'   => ':attributeの項目数は、:value個以下でなければなりません。',\n        'file'    => ':attributeは、:value KB以下でなければなりません。',\n        'numeric' => ':attributeは、:value以下でなければなりません。',\n        'string'  => ':attributeは、:value文字以下でなければなりません。',\n    ],\n    'max'                  => [\n        'array'   => ':attributeの項目は、:max個以下にしてください。',\n        'file'    => ':attributeには、:max KB以下のファイルを指定してください。',\n        'numeric' => ':attributeには、:max以下の数字を指定してください。',\n        'string'  => ':attributeは、:max文字以下にしてください。',\n    ],\n    'mimes'                => ':attributeには、:valuesタイプのファイルを指定してください。',\n    'mimetypes'            => ':attributeには、:valuesタイプのファイルを指定してください。',\n    'min'                  => [\n        'array'   => ':attributeの項目は、:min個以上にしてください。',\n        'file'    => ':attributeには、:min KB以上のファイルを指定してください。',\n        'numeric' => ':attributeには、:min以上の数字を指定してください。',\n        'string'  => ':attributeは、:min文字以上にしてください。',\n    ],\n    'multiple_of'          => ':attributeは:valueの倍数でなければなりません',\n    'not_in'               => '選択された:attributeは、有効ではありません。',\n    'not_regex'            => ':attributeの形式が無効です。',\n    'numeric'              => ':attributeには、数字を指定してください。',\n    'password'             => 'パスワードが正しくありません。',\n    'present'              => ':attributeが存在している必要があります。',\n    'prohibited'           => ':attributeフィールドは禁止されています。',\n    'prohibited_if'        => ':attributeフィールドは、:otherが:valueの場合は禁止されています。',\n    'prohibited_unless'    => ':attributeフィールドは、:otherが:valuesでない限り禁止されています。',\n    'prohibits'            => 'The :attribute field prohibits :other from being present.',\n    'regex'                => ':attributeには、有効な正規表現を指定してください。',\n    'relatable'            => 'この:attributeきない場合に伴い資源です。',\n    'required'             => ':attributeは、必ず指定してください。',\n    'required_if'          => ':otherが:valueの場合、:attributeを指定してください。',\n    'required_unless'      => ':otherが:values以外の場合、:attributeを指定してください。',\n    'required_with'        => ':valuesが指定されている場合、:attributeも指定してください。',\n    'required_with_all'    => ':valuesが全て指定されている場合、:attributeも指定してください。',\n    'required_without'     => ':valuesが指定されていない場合、:attributeを指定してください。',\n    'required_without_all' => ':valuesが全て指定されていない場合、:attributeを指定してください。',\n    'same'                 => ':attributeと:otherが一致しません。',\n    'size'                 => [\n        'array'   => ':attributeの項目は、:size個にしてください。',\n        'file'    => ':attributeには、:size KBのファイルを指定してください。',\n        'numeric' => ':attributeには、:sizeを指定してください。',\n        'string'  => ':attributeは、:size文字にしてください。',\n    ],\n    'starts_with'          => ':attributeは、次のいずれかで始まる必要があります。:values',\n    'string'               => ':attributeには、文字を指定してください。',\n    'timezone'             => ':attributeには、有効なタイムゾーンを指定してください。',\n    'unique'               => '指定の:attributeは既に使用されています。',\n    'uploaded'             => ':attributeのアップロードに失敗しました。',\n    'url'                  => ':attributeは、有効なURL形式で指定してください。',\n    'uuid'                 => ':attributeは、有効なUUIDでなければなりません。',\n    'custom'               => [\n        'attribute-name' => [\n            'rule-name' => 'custom-message',\n        ],\n    ],\n    'attributes'           => [\n        'name' => '名前',\n        'email' => 'メールアドレス',\n        'login_id' => 'ログインID',\n        'password' => 'パスワード'\n        \n    ],\n];"
+        }
+    ]
+}

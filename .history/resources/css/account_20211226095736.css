@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+
+.formMain {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.tn {
+    @apply py-1 px-4 mb-1 rounded;
+}
+
+.editBtn {
+    @apply py-1 px-8 mt-6 rounded;
+}

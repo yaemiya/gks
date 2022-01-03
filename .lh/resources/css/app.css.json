@@ -1,0 +1,130 @@
+{
+    "sourceFile": "resources/css/app.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 28,
+            "patches": [
+                {
+                    "date": 1639797890897,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1639797897582,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -127,14 +127,14 @@\n     @apply bg-blue-700;\n   }\n \n   /* テーブル */\n-/table{\n+.table{\n   width: 100%;\n   border-collapse: collapse;\n   text-align: center;\n }\n-th{\n+..th{\n   border: 1px solid black;\n }\n td{\n   width: 70px;\n"
+                },
+                {
+                    "date": 1639797910609,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -132,12 +132,12 @@\n   width: 100%;\n   border-collapse: collapse;\n   text-align: center;\n }\n-..th{\n+.th{\n   border: 1px solid black;\n }\n-td{\n+.td{\n   width: 70px;\n   border: 1px solid black;\n }\n thead th{\n"
+                },
+                {
+                    "date": 1639797917043,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -139,14 +139,14 @@\n .td{\n   width: 70px;\n   border: 1px solid black;\n }\n-thead th{\n+.thead th{\n   height: 35px;\n   background-color: gray;\n   color: white;\n }\n-tbody td{\n+.tbody td{\n   height: 45px;\n }\n tbody tr:nth-child(2n){\n   background-color: lightgray;\n"
+                },
+                {
+                    "date": 1639797924852,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -144,10 +144,10 @@\n   height: 35px;\n   background-color: gray;\n   color: white;\n }\n-.tbody td{\n+.tbody .td{\n   height: 45px;\n }\n-tbody tr:nth-child(2n){\n+.tbody .tr:nth-child(2n){\n   background-color: lightgray;\n }\n"
+                },
+                {
+                    "date": 1639798098429,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -127,27 +127,27 @@\n     @apply bg-blue-700;\n   }\n \n   /* テーブル */\n-.table{\n+table{\n   width: 100%;\n   border-collapse: collapse;\n   text-align: center;\n }\n-.th{\n+th{\n   border: 1px solid black;\n }\n-.td{\n+td{\n   width: 70px;\n   border: 1px solid black;\n }\n-.thead th{\n+thead th{\n   height: 35px;\n   background-color: gray;\n   color: white;\n }\n-.tbody .td{\n+tbody td{\n   height: 45px;\n }\n-.tbody .tr:nth-child(2n){\n+tbody tr:nth-child(2n){\n   background-color: lightgray;\n }\n"
+                },
+                {
+                    "date": 1639798250340,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -117,9 +117,9 @@\n }\n \n /* ボタン */\n   .btn {\n-    @apply py-1 px-3 mb-1 items-end rounded;\n+    @apply py-1 px-3 mb-1 rounded;\n   }\n   .btn-green {\n     @apply bg-green-600 text-white;\n   }\n"
+                },
+                {
+                    "date": 1639798744832,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -117,9 +117,9 @@\n }\n \n /* ボタン */\n   .btn {\n-    @apply py-1 px-3 mb-1 rounded;\n+    @apply py-1 px-4 mb-1 rounded;\n   }\n   .btn-green {\n     @apply bg-green-600 text-white;\n   }\n"
+                },
+                {
+                    "date": 1639810411090,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,9 +97,9 @@\n }\n \n /* 各ページ共通 */\n .pageView {\n-    margin-top: 3px;\n+    margin-top: 10px;\n     margin-left: 10px;\n     font-size: 16px;\n }\n \n"
+                },
+                {
+                    "date": 1639811196961,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -125,8 +125,14 @@\n   }\n   .btn-blue:hover {\n     @apply bg-blue-700;\n   }\n+  .btn-green {\n+    @apply bg-green-600 text-white;\n+  }\n+  .btn-blue:hover {\n+    @apply bg-blue-700;\n+  }\n \n   /* テーブル */\n table{\n   width: 100%;\n"
+                },
+                {
+                    "date": 1639811204016,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -125,9 +125,9 @@\n   }\n   .btn-blue:hover {\n     @apply bg-blue-700;\n   }\n-  .btn-green {\n+  .btn-red {\n     @apply bg-green-600 text-white;\n   }\n   .btn-blue:hover {\n     @apply bg-blue-700;\n"
+                },
+                {
+                    "date": 1639811222271,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -126,9 +126,9 @@\n   .btn-blue:hover {\n     @apply bg-blue-700;\n   }\n   .btn-red {\n-    @apply bg-green-600 text-white;\n+    @apply bg-red-600 text-white;\n   }\n   .btn-blue:hover {\n     @apply bg-blue-700;\n   }\n"
+                },
+                {
+                    "date": 1639811231085,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -128,9 +128,9 @@\n   }\n   .btn-red {\n     @apply bg-red-600 text-white;\n   }\n-  .btn-blue:hover {\n+  .btn-red:hover {\n     @apply bg-blue-700;\n   }\n \n   /* テーブル */\n"
+                },
+                {
+                    "date": 1639811280152,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -122,9 +122,9 @@\n   }\n   .btn-green {\n     @apply bg-green-600 text-white;\n   }\n-  .btn-blue:hover {\n+  .btn-green:hover {\n     @apply bg-blue-700;\n   }\n   .btn-red {\n     @apply bg-red-600 text-white;\n"
+                },
+                {
+                    "date": 1639811310297,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -120,9 +120,9 @@\n   .btn {\n     @apply py-1 px-4 mb-1 rounded;\n   }\n   .btn-green {\n-    @apply bg-green-600 text-white;\n+    @apply bg-green-700 text-white;\n   }\n   .btn-green:hover {\n     @apply bg-blue-700;\n   }\n"
+                },
+                {
+                    "date": 1639811317119,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -123,9 +123,9 @@\n   .btn-green {\n     @apply bg-green-700 text-white;\n   }\n   .btn-green:hover {\n-    @apply bg-blue-700;\n+    @apply bg-green-700;\n   }\n   .btn-red {\n     @apply bg-red-600 text-white;\n   }\n"
+                },
+                {
+                    "date": 1639811323854,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -123,12 +123,12 @@\n   .btn-green {\n     @apply bg-green-700 text-white;\n   }\n   .btn-green:hover {\n-    @apply bg-green-700;\n+    @apply bg-green-400;\n   }\n   .btn-red {\n-    @apply bg-red-600 text-white;\n+    @apply bg-red-700 text-white;\n   }\n   .btn-red:hover {\n     @apply bg-blue-700;\n   }\n"
+                },
+                {
+                    "date": 1639811332425,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -129,9 +129,9 @@\n   .btn-red {\n     @apply bg-red-700 text-white;\n   }\n   .btn-red:hover {\n-    @apply bg-blue-700;\n+    @apply bg-red-400;\n   }\n \n   /* テーブル */\n table{\n"
+                },
+                {
+                    "date": 1639811376702,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -120,9 +120,9 @@\n   .btn {\n     @apply py-1 px-4 mb-1 rounded;\n   }\n   .btn-green {\n-    @apply bg-green-700 text-white;\n+    @apply bg-green-600 text-white;\n   }\n   .btn-green:hover {\n     @apply bg-green-400;\n   }\n"
+                },
+                {
+                    "date": 1639829700400,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,8 +95,10 @@\n     border-top: solid 6px transparent;\n     border-bottom: solid 6px transparent;\n }\n \n+\n+\n /* 各ページ共通 */\n .pageView {\n     margin-top: 10px;\n     margin-left: 10px;\n@@ -126,9 +128,9 @@\n   .btn-green:hover {\n     @apply bg-green-400;\n   }\n   .btn-red {\n-    @apply bg-red-700 text-white;\n+    @apply bg-red-600 text-white;\n   }\n   .btn-red:hover {\n     @apply bg-red-400;\n   }\n"
+                },
+                {
+                    "date": 1639829707181,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,10 +95,10 @@\n     border-top: solid 6px transparent;\n     border-bottom: solid 6px transparent;\n }\n \n+/* エラー画面 */\n \n-\n /* 各ページ共通 */\n .pageView {\n     margin-top: 10px;\n     margin-left: 10px;\n"
+                },
+                {
+                    "date": 1639829713685,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -96,8 +96,9 @@\n     border-bottom: solid 6px transparent;\n }\n \n /* エラー画面 */\n+.errro\n \n /* 各ページ共通 */\n .pageView {\n     margin-top: 10px;\n"
+                },
+                {
+                    "date": 1639829718949,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -96,9 +96,11 @@\n     border-bottom: solid 6px transparent;\n }\n \n /* エラー画面 */\n-.errro\n+.errror{\n+  \n+}\n \n /* 各ページ共通 */\n .pageView {\n     margin-top: 10px;\n"
+                },
+                {
+                    "date": 1639829731778,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,9 +97,9 @@\n }\n \n /* エラー画面 */\n .errror{\n-  \n+  color\n }\n \n /* 各ページ共通 */\n .pageView {\n"
+                },
+                {
+                    "date": 1639829743645,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,12 +95,8 @@\n     border-top: solid 6px transparent;\n     border-bottom: solid 6px transparent;\n }\n \n-/* エラー画面 */\n-.errror{\n-  color\n-}\n \n /* 各ページ共通 */\n .pageView {\n     margin-top: 10px;\n"
+                },
+                {
+                    "date": 1639834100583,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,9 +95,8 @@\n     border-top: solid 6px transparent;\n     border-bottom: solid 6px transparent;\n }\n \n-\n /* 各ページ共通 */\n .pageView {\n     margin-top: 10px;\n     margin-left: 10px;\n@@ -121,9 +120,9 @@\n   .btn {\n     @apply py-1 px-4 mb-1 rounded;\n   }\n   .btn-green {\n-    @apply bg-green-600 text-white;\n+    @apply bg-green-500 text-white;\n   }\n   .btn-green:hover {\n     @apply bg-green-400;\n   }\n"
+                },
+                {
+                    "date": 1639837042258,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -111,9 +111,9 @@\n }\n \n .title {\n     margin-top: 20px;\n-    font-size: 30px;\n+    font-size: 25px;\n     text-align: center;\n }\n \n /* ボタン */\n@@ -126,9 +126,9 @@\n   .btn-green:hover {\n     @apply bg-green-400;\n   }\n   .btn-red {\n-    @apply bg-red-600 text-white;\n+    @apply bg-red-500 text-white;\n   }\n   .btn-red:hover {\n     @apply bg-red-400;\n   }\n"
+                },
+                {
+                    "date": 1639840113178,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -142,9 +142,8 @@\n th{\n   border: 1px solid black;\n }\n td{\n-  width: 70px;\n   border: 1px solid black;\n }\n thead th{\n   height: 35px;\n"
+                },
+                {
+                    "date": 1639867335463,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -136,9 +136,9 @@\n   /* テーブル */\n table{\n   width: 100%;\n   border-collapse: collapse;\n-  text-align: center;\n+  /* text-align: center; */\n }\n th{\n   border: 1px solid black;\n }\n"
+                }
+            ],
+            "date": 1639797890897,
+            "name": "Commit-0",
+            "content": "@import 'tailwindcss/base';\n@import 'tailwindcss/components';\n@import 'tailwindcss/utilities';\n\n/* ドロップダウンメニュー */\n.dropdwn_menu {\n    zoom: 1;\n    background-color: black;\n    border: small solid whitesmoke;\n    text-align: center;\n}\n\n.dropdwn_menu li {\n    float: left;\n    width: 200px;\n    height: 36px;\n    position: relative;\n    list-style-type: none;\n    border-top: 1px solid whitesmoke;\n    border-right: 1px solid whitesmoke;\n}\n\n.dropdwn_menu:first-child {\n    border-left: 1px solid whitesmoke;\n}\n\n.dropdwn_menu li:hover {\n    background-color: rgb(77, 77, 77);\n}\n\n* html .dropdwn_menu li {\n    display: inline;\n    zoom: 1;\n}\n\n*+html .dropdwn_menu li {\n    display: inline;\n    zoom: 1;\n}\n\n.dropdwn_menu a {\n    display: block;\n    width: 100%;\n    height: 100%;\n    line-height: 36px;\n    font-weight: bold;\n    color: whitesmoke;\n    text-decoration: none;\n    position: relative;\n}\n\n.dropdwn_menu ul.sub2 {\n    display: none;\n    background-color: black;\n}\n\n* html .dropdwn_menu ul.sub2 {\n    zoom: 1;\n    position: relative;\n}\n\n*+html .dropdwn_menu ul.sub2 {\n    zoom: 1;\n    position: relative;\n}\n\n.dropdwn_menu ul.sub2 li {\n    float: none;\n}\n\n.dropdwn_menu ul.sub2 li ul.sub2 {\n    position: absolute;\n    left: 200px;\n    top: 0;\n}\n\n.dropdwn_menu:after {\n    height: 0;\n    visibility: hidden;\n    content: \".\";\n    display: block;\n    clear: both;\n}\n\n.triangle_down {\n    border-top: solid 6px whitesmoke;\n    border-right: solid 6px transparent;\n    border-left: solid 6px transparent;\n    border-bottom: solid 6px transparent;\n}\n\n.triangle_right {\n    border-left: solid 6px whitesmoke;\n    border-right: solid 6px transparent;\n    border-top: solid 6px transparent;\n    border-bottom: solid 6px transparent;\n}\n\n/* 各ページ共通 */\n.pageView {\n    margin-top: 3px;\n    margin-left: 10px;\n    font-size: 16px;\n}\n\n.container{\n    width: 1300px;\n    margin: 0 auto;\n    padding: 20px;\n    background-color: whitesmoke;\n}\n\n.title {\n    margin-top: 20px;\n    font-size: 30px;\n    text-align: center;\n}\n\n/* ボタン */\n  .btn {\n    @apply py-1 px-3 mb-1 items-end rounded;\n  }\n  .btn-green {\n    @apply bg-green-600 text-white;\n  }\n  .btn-blue:hover {\n    @apply bg-blue-700;\n  }\n\n  /* テーブル */\n/table{\n  width: 100%;\n  border-collapse: collapse;\n  text-align: center;\n}\nth{\n  border: 1px solid black;\n}\ntd{\n  width: 70px;\n  border: 1px solid black;\n}\nthead th{\n  height: 35px;\n  background-color: gray;\n  color: white;\n}\ntbody td{\n  height: 45px;\n}\ntbody tr:nth-child(2n){\n  background-color: lightgray;\n}\n"
+        }
+    ]
+}

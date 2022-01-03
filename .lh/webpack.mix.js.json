@@ -1,0 +1,262 @@
+{
+    "sourceFile": "webpack.mix.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 61,
+            "patches": [
+                {
+                    "date": 1638970518747,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1638971851883,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,10 @@\n     require( 'postcss-import' ),\n     require( 'tailwindcss' ),\n     require( 'autoprefixer' ),\n ]);\n-mix.js('resources/js/app.js', 'public/js').js('resources/js/auth.js', 'public/js').autoload({\n+\n+mix.js('resources/js/app.js', 'public/js').js('resources/js/header.js', 'public/js').autoload({\n     \"jquery\": ['$', 'window.jQuery'],\n }).postCss('resources/css/app.css', 'public/css', [\n     require('postcss-import'),\n     require('tailwindcss'),\n"
+                },
+                {
+                    "date": 1638977122586,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n  | file for the application as well as bundling up all the JS files.\n  |\n  */\n \n-mix.js( 'resources/js/app.js', 'public/js' ).js( 'resources/js/auth.js', 'public/js' ).autoload( {\n+mix.js('resources/js/app.js', 'public/js').js('resources/js/auth.js', 'public/js').js('resources/js/header.js', 'public/js')..autoload({\n     \"jquery\": [ '$', 'window.jQuery' ],\n } ).postCss( 'resources/css/app.css', 'public/css', [\n     require( 'postcss-import' ),\n     require( 'tailwindcss' ),\n"
+                },
+                {
+                    "date": 1638977131236,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,19 +10,19 @@\n  | file for the application as well as bundling up all the JS files.\n  |\n  */\n \n-mix.js('resources/js/app.js', 'public/js').js('resources/js/auth.js', 'public/js').js('resources/js/header.js', 'public/js')..autoload({\n+mix.js('resources/js/app.js', 'public/js').js('resources/js/auth.js', 'public/js').js('resources/js/header.js', 'public/js').autoload({\n     \"jquery\": [ '$', 'window.jQuery' ],\n } ).postCss( 'resources/css/app.css', 'public/css', [\n     require( 'postcss-import' ),\n     require( 'tailwindcss' ),\n     require( 'autoprefixer' ),\n ]);\n \n-mix.js('resources/js/app.js', 'public/js').js('resources/js/header.js', 'public/js').autoload({\n-    \"jquery\": ['$', 'window.jQuery'],\n-}).postCss('resources/css/app.css', 'public/css', [\n-    require('postcss-import'),\n-    require('tailwindcss'),\n-    require('autoprefixer'),\n\\ No newline at end of file\n-]);\n+// mix.js('resources/js/app.js', 'public/js').js('resources/js/header.js', 'public/js').autoload({\n+//     \"jquery\": ['$', 'window.jQuery'],\n+// }).postCss('resources/css/app.css', 'public/css', [\n+//     require('postcss-import'),\n+//     require('tailwindcss'),\n+//     require('autoprefixer'),\n+// ]);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638977216019,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,12 +17,4 @@\n     require( 'postcss-import' ),\n     require( 'tailwindcss' ),\n     require( 'autoprefixer' ),\n ]);\n-\n-// mix.js('resources/js/app.js', 'public/js').js('resources/js/header.js', 'public/js').autoload({\n-//     \"jquery\": ['$', 'window.jQuery'],\n-// }).postCss('resources/css/app.css', 'public/css', [\n-//     require('postcss-import'),\n-//     require('tailwindcss'),\n-//     require('autoprefixer'),\n-// ]);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638977233618,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n  | file for the application as well as bundling up all the JS files.\n  |\n  */\n \n-mix.js('resources/js/app.js', 'public/js').js('resources/js/auth.js', 'public/js').js('resources/js/header.js', 'public/js').autoload({\n+mix.js('resources/js/app.js', 'public/js').js('resources/js/auth.js', 'public/js').autoload({\n     \"jquery\": [ '$', 'window.jQuery' ],\n } ).postCss( 'resources/css/app.css', 'public/css', [\n     require( 'postcss-import' ),\n     require( 'tailwindcss' ),\n"
+                },
+                {
+                    "date": 1638977762747,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,4 +17,5 @@\n     require( 'postcss-import' ),\n     require( 'tailwindcss' ),\n     require( 'autoprefixer' ),\n ]);\n+\n"
+                },
+                {
+                    "date": 1638977788063,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,4 +18,5 @@\n     require( 'tailwindcss' ),\n     require( 'autoprefixer' ),\n ]);\n \n+mix.styles('public/css/hogehoge.css', 'public/css/jpn.min.css')\n"
+                },
+                {
+                    "date": 1638977815573,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,5 +18,5 @@\n     require( 'tailwindcss' ),\n     require( 'autoprefixer' ),\n ]);\n \n-mix.styles('public/css/hogehoge.css', 'public/css/jpn.min.css')\n+mix.styles('public/css/header.css', 'public/css/jpn.min.css')\n"
+                },
+                {
+                    "date": 1638977913201,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,5 +18,5 @@\n     require( 'tailwindcss' ),\n     require( 'autoprefixer' ),\n ]);\n \n-mix.styles('public/css/header.css', 'public/css/jpn.min.css')\n+mix.styles('resources/css/header.css', 'public/css/jpn.min.css')\n"
+                },
+                {
+                    "date": 1638977931456,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,5 +18,5 @@\n     require( 'tailwindcss' ),\n     require( 'autoprefixer' ),\n ]);\n \n-mix.styles('resources/css/header.css', 'public/css/jpn.min.css')\n+mix.styles('resources/css/header.css', 'public/css/header.css')\n"
+                },
+                {
+                    "date": 1638977964557,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,7 +16,5 @@\n } ).postCss( 'resources/css/app.css', 'public/css', [\n     require( 'postcss-import' ),\n     require( 'tailwindcss' ),\n     require( 'autoprefixer' ),\n-]);\n-\n-mix.styles('resources/css/header.css', 'public/css/header.css')\n+]);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1639056539630,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,27 @@\n+const mix = require('laravel-mix');\n+\n+/*\n+ |--------------------------------------------------------------------------\n+ | Mix Asset Management\n+ |--------------------------------------------------------------------------\n+ |\n+ | Mix provides a clean, fluent API for defining some Webpack build steps\n+ | for your Laravel applications. By default, we are compiling the CSS\n+ | file for the application as well as bundling up all the JS files.\n+ |\n+ */\n+\n+mix.js('resources/js/app.js', 'public/js').js('resources/js/auth.js', 'public/js').autoload({\n+    \"jquery\": [ '$', 'window.jQuery' ],\n+} ).postCss( 'resources/css/app.css', 'public/css', [\n+    require( 'postcss-import' ),\n+    require( 'tailwindcss' ),\n+    require( 'autoprefixer' ),\n+]);\n+mix.js('resources/js/app.js', 'public/js').js('resources/js/auth.js', 'public/js').autoload({\n+    \"jquery\": ['$', 'window.jQuery'],\n+}).postCss('resources/css/app.css', 'public/css', [\n+    require('postcss-import'),\n+    require('tailwindcss'),\n+    require('autoprefixer'),\n+]);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1639056539730,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,5 +16,12 @@\n } ).postCss( 'resources/css/app.css', 'public/css', [\n     require( 'postcss-import' ),\n     require( 'tailwindcss' ),\n     require( 'autoprefixer' ),\n+]);\n+mix.js('resources/js/app.js', 'public/js').js('resources/js/auth.js', 'public/js').autoload({\n+    \"jquery\": ['$', 'window.jQuery'],\n+}).postCss('resources/css/app.css', 'public/css', [\n+    require('postcss-import'),\n+    require('tailwindcss'),\n+    require('autoprefixer'),\n ]);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1639056551426,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,38 +17,11 @@\n     require( 'postcss-import' ),\n     require( 'tailwindcss' ),\n     require( 'autoprefixer' ),\n ]);\n-mix.js('resources/js/app.js', 'public/js').js('resources/js/auth.js', 'public/js').autoload({\n+mix.js('resources/js/app.js', 'public/js').js('resources/js/.js', 'public/js').autoload({\n     \"jquery\": ['$', 'window.jQuery'],\n }).postCss('resources/css/app.css', 'public/css', [\n     require('postcss-import'),\n     require('tailwindcss'),\n     require('autoprefixer'),\n-]);\n-mix.js('resources/js/app.js', 'public/js').js('resources/js/auth.js', 'public/js').autoload({\n-    \"jquery\": ['$', 'window.jQuery'],\n-}).postCss('resources/css/app.css', 'public/css', [\n-    require('postcss-import'),\n-    require('tailwindcss'),\n-    require('autoprefixer'),\n-]);\n-const mix = require('laravel-mix');\n-\n-/*\n- |--------------------------------------------------------------------------\n- | Mix Asset Management\n- |--------------------------------------------------------------------------\n- |\n- | Mix provides a clean, fluent API for defining some Webpack build steps\n- | for your Laravel applications. By default, we are compiling the CSS\n- | file for the application as well as bundling up all the JS files.\n- |\n- */\n-\n-mix.js('resources/js/app.js', 'public/js').js('resources/js/auth.js', 'public/js').autoload({\n-    \"jquery\": [ '$', 'window.jQuery' ],\n-} ).postCss( 'resources/css/app.css', 'public/css', [\n-    require( 'postcss-import' ),\n-    require( 'tailwindcss' ),\n-    require( 'autoprefixer' ),\n ]);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1639056569247,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n     require( 'postcss-import' ),\n     require( 'tailwindcss' ),\n     require( 'autoprefixer' ),\n ]);\n-mix.js('resources/js/app.js', 'public/js').js('resources/js/.js', 'public/js').autoload({\n+mix.js('resources/js/app.js', 'public/js').js('resources/js/headeer.js', 'public/js').autoload({\n     \"jquery\": ['$', 'window.jQuery'],\n }).postCss('resources/css/app.css', 'public/css', [\n     require('postcss-import'),\n     require('tailwindcss'),\n"
+                },
+                {
+                    "date": 1639056739411,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,11 +17,11 @@\n     require( 'postcss-import' ),\n     require( 'tailwindcss' ),\n     require( 'autoprefixer' ),\n ]);\n-mix.js('resources/js/app.js', 'public/js').js('resources/js/headeer.js', 'public/js').autoload({\n+mix.js('resources/js/app.js', 'public/js').js('resources/js/header.js', 'public/js').autoload({\n     \"jquery\": ['$', 'window.jQuery'],\n-}).postCss('resources/css/app.css', 'public/css', [\n+}).postCss('resources/css/header.css', 'public/css', [\n     require('postcss-import'),\n     require('tailwindcss'),\n     require('autoprefixer'),\n ]);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1639056874490,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n  | file for the application as well as bundling up all the JS files.\n  |\n  */\n \n-mix.js('resources/js/app.js', 'public/js').js('resources/js/auth.js', 'public/js').autoload({\n+mix.js('resources/js/app.js', 'public/js').js('resources/js/auth.js', 'resources/js/header.js', 'public/js').autoload({\n     \"jquery\": [ '$', 'window.jQuery' ],\n } ).postCss( 'resources/css/app.css', 'public/css', [\n     require( 'postcss-import' ),\n     require( 'tailwindcss' ),\n"
+                },
+                {
+                    "date": 1639056894563,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,27 @@\n+const mix = require('laravel-mix');\n+\n+/*\n+ |--------------------------------------------------------------------------\n+ | Mix Asset Management\n+ |--------------------------------------------------------------------------\n+ |\n+ | Mix provides a clean, fluent API for defining some Webpack build steps\n+ | for your Laravel applications. By default, we are compiling the CSS\n+ | file for the application as well as bundling up all the JS files.\n+ |\n+ */\n+\n+mix.js('resources/js/app.js', 'public/js').js('resources/js/auth.js', 'resources/js/header.js', 'public/js').autoload({\n+    \"jquery\": [ '$', 'window.jQuery' ],\n+}).postCss('resources/css/app.css', 'resources/css/header.css', 'public/css', [\n+    require( 'postcss-import' ),\n+    require( 'tailwindcss' ),\n+    require( 'autoprefixer' ),\n+]);\n+mix.js('resources/js/app.js', 'public/js').js('resources/js/header.js', 'public/js').autoload({\n+    \"jquery\": ['$', 'window.jQuery'],\n+}).postCss('resources/css/header.css', 'public/css', [\n+    require('postcss-import'),\n+    require('tailwindcss'),\n+    require('autoprefixer'),\n+]);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1639057382945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n  */\n \n mix.js('resources/js/app.js', 'public/js').js('resources/js/auth.js', 'resources/js/header.js', 'public/js').autoload({\n     \"jquery\": [ '$', 'window.jQuery' ],\n-}).postCss('resources/css/app.css', 'resources/css/header.css', 'public/css', [\n+} ).postCss( 'resources/css/app.css','resources/css/header.css', 'public/css', [\n     require( 'postcss-import' ),\n     require( 'tailwindcss' ),\n     require( 'autoprefixer' ),\n ]);\n@@ -23,32 +23,5 @@\n }).postCss('resources/css/header.css', 'public/css', [\n     require('postcss-import'),\n     require('tailwindcss'),\n     require('autoprefixer'),\n-]);\n-const mix = require('laravel-mix');\n-\n-/*\n- |--------------------------------------------------------------------------\n- | Mix Asset Management\n- |--------------------------------------------------------------------------\n- |\n- | Mix provides a clean, fluent API for defining some Webpack build steps\n- | for your Laravel applications. By default, we are compiling the CSS\n- | file for the application as well as bundling up all the JS files.\n- |\n- */\n-\n-mix.js('resources/js/app.js', 'public/js').js('resources/js/auth.js', 'resources/js/header.js', 'public/js').autoload({\n-    \"jquery\": [ '$', 'window.jQuery' ],\n-} ).postCss( 'resources/css/app.css', 'public/css', [\n-    require( 'postcss-import' ),\n-    require( 'tailwindcss' ),\n-    require( 'autoprefixer' ),\n-]);\n-mix.js('resources/js/app.js', 'public/js').js('resources/js/header.js', 'public/js').autoload({\n-    \"jquery\": ['$', 'window.jQuery'],\n-}).postCss('resources/css/header.css', 'public/css', [\n-    require('postcss-import'),\n-    require('tailwindcss'),\n-    require('autoprefixer'),\n ]);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1639057672178,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,11 +10,11 @@\n  | file for the application as well as bundling up all the JS files.\n  |\n  */\n \n-mix.js('resources/js/app.js', 'public/js').js('resources/js/auth.js', 'resources/js/header.js', 'public/js').autoload({\n+mix.js('resources/js/app.js', 'public/js').js('resources/js/auth.js', 'public/js').autoload({\n     \"jquery\": [ '$', 'window.jQuery' ],\n-} ).postCss( 'resources/css/app.css','resources/css/header.css', 'public/css', [\n+} ).postCss( 'resources/css/app.css', 'public/css', [\n     require( 'postcss-import' ),\n     require( 'tailwindcss' ),\n     require( 'autoprefixer' ),\n ]);\n@@ -23,5 +23,6 @@\n }).postCss('resources/css/header.css', 'public/css', [\n     require('postcss-import'),\n     require('tailwindcss'),\n     require('autoprefixer'),\n-]);\n\\ No newline at end of file\n+]);\n+mix\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1639057677305,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,5 +24,5 @@\n     require('postcss-import'),\n     require('tailwindcss'),\n     require('autoprefixer'),\n ]);\n-mix\n\\ No newline at end of file\n+mix.scripts()\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1639057683770,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,5 +24,7 @@\n     require('postcss-import'),\n     require('tailwindcss'),\n     require('autoprefixer'),\n ]);\n-mix.scripts()\n\\ No newline at end of file\n+mix.scripts([\n+    ''\n+])\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1639057689404,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,6 +25,6 @@\n     require('tailwindcss'),\n     require('autoprefixer'),\n ]);\n mix.scripts([\n-    ''\n+    'public\\assets'\n ])\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1639057703905,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,6 +25,6 @@\n     require('tailwindcss'),\n     require('autoprefixer'),\n ]);\n mix.scripts([\n-    'public\\assets'\n+    'public/assetsjs/'\n ])\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1639057712709,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,6 +25,6 @@\n     require('tailwindcss'),\n     require('autoprefixer'),\n ]);\n mix.scripts([\n-    'public/assetsjs/'\n+    'public/assetsjs/'header\n ])\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1639057720388,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,6 +25,6 @@\n     require('tailwindcss'),\n     require('autoprefixer'),\n ]);\n mix.scripts([\n-    'public/assetsjs/'header\n+    'public/assetsjs/'headers.js'\n ])\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1639057739900,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,6 +25,6 @@\n     require('tailwindcss'),\n     require('autoprefixer'),\n ]);\n mix.scripts([\n-    'public/assetsjs/'headers.js'\n+    'public/assets/js/'headers.js'/\n ])\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1639057760831,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,6 +25,6 @@\n     require('tailwindcss'),\n     require('autoprefixer'),\n ]);\n mix.scripts([\n-    'public/assets/js/'headers.js'/\n+    'public/assets/js/'headers.js'\n ])\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1639057863669,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,30 @@\n+const mix = require('laravel-mix');\n+\n+/*\n+ |--------------------------------------------------------------------------\n+ | Mix Asset Management\n+ |--------------------------------------------------------------------------\n+ |\n+ | Mix provides a clean, fluent API for defining some Webpack build steps\n+ | for your Laravel applications. By default, we are compiling the CSS\n+ | file for the application as well as bundling up all the JS files.\n+ |\n+ */\n+\n+mix.js('resources/js/app.js', 'public/js').js('resources/js/auth.js', 'public/js').js(autoload({\n+    \"jquery\": [ '$', 'window.jQuery' ],\n+} ).postCss( 'resources/css/app.css', 'public/css', [\n+    require( 'postcss-import' ),\n+    require( 'tailwindcss' ),\n+    require( 'autoprefixer' ),\n+]);\n+mix.js('resources/js/app.js', 'public/js').js('resources/js/header.js', 'public/js').autoload({\n+    \"jquery\": ['$', 'window.jQuery'],\n+}).postCss('resources/css/header.css', 'public/css', [\n+    require('postcss-import'),\n+    require('tailwindcss'),\n+    require('autoprefixer'),\n+]);\n+mix.scripts([\n+    'public/assets/js/'headers.js'\n+])\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1639057877563,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n  | file for the application as well as bundling up all the JS files.\n  |\n  */\n \n-mix.js('resources/js/app.js', 'public/js').js('resources/js/auth.js', 'public/js').js(autoload({\n+mix.js('resources/js/app.js', 'public/js').js('resources/js/auth.js', 'public/js').js('resources/js/auth.js', 'public/js')(autoload({\n     \"jquery\": [ '$', 'window.jQuery' ],\n } ).postCss( 'resources/css/app.css', 'public/css', [\n     require( 'postcss-import' ),\n     require( 'tailwindcss' ),\n@@ -26,35 +26,5 @@\n     require('autoprefixer'),\n ]);\n mix.scripts([\n     'public/assets/js/'headers.js'\n-])\n-const mix = require('laravel-mix');\n-\n-/*\n- |--------------------------------------------------------------------------\n- | Mix Asset Management\n- |--------------------------------------------------------------------------\n- |\n- | Mix provides a clean, fluent API for defining some Webpack build steps\n- | for your Laravel applications. By default, we are compiling the CSS\n- | file for the application as well as bundling up all the JS files.\n- |\n- */\n-\n-mix.js('resources/js/app.js', 'public/js').js('resources/js/auth.js', 'public/js').autoload({\n-    \"jquery\": [ '$', 'window.jQuery' ],\n-} ).postCss( 'resources/css/app.css', 'public/css', [\n-    require( 'postcss-import' ),\n-    require( 'tailwindcss' ),\n-    require( 'autoprefixer' ),\n-]);\n-mix.js('resources/js/app.js', 'public/js').js('resources/js/header.js', 'public/js').autoload({\n-    \"jquery\": ['$', 'window.jQuery'],\n-}).postCss('resources/css/header.css', 'public/css', [\n-    require('postcss-import'),\n-    require('tailwindcss'),\n-    require('autoprefixer'),\n-]);\n-mix.scripts([\n-    'public/assets/js/'headers.js'\n ])\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1639057883894,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n  | file for the application as well as bundling up all the JS files.\n  |\n  */\n \n-mix.js('resources/js/app.js', 'public/js').js('resources/js/auth.js', 'public/js').js('resources/js/auth.js', 'public/js')(autoload({\n+mix.js('resources/js/app.js', 'public/js').js('resources/js/auth.js', 'public/js').js('resources/js/header.js', 'public/js')(autoload({\n     \"jquery\": [ '$', 'window.jQuery' ],\n } ).postCss( 'resources/css/app.css', 'public/css', [\n     require( 'postcss-import' ),\n     require( 'tailwindcss' ),\n"
+                },
+                {
+                    "date": 1639057906950,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n  | file for the application as well as bundling up all the JS files.\n  |\n  */\n \n-mix.js('resources/js/app.js', 'public/js').js('resources/js/auth.js', 'public/js').js('resources/js/header.js', 'public/js')(autoload({\n+mix.js('resources/js/app.js', 'public/js').js('resources/js/auth.js', 'public/js').js('resources/js/header.js', 'public/js')autoload({\n     \"jquery\": [ '$', 'window.jQuery' ],\n } ).postCss( 'resources/css/app.css', 'public/css', [\n     require( 'postcss-import' ),\n     require( 'tailwindcss' ),\n"
+                },
+                {
+                    "date": 1639057913893,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,10 @@\n  | file for the application as well as bundling up all the JS files.\n  |\n  */\n \n-mix.js('resources/js/app.js', 'public/js').js('resources/js/auth.js', 'public/js').js('resources/js/header.js', 'public/js')autoload({\n+mix.js('resources/js/app.js', 'public/js').js('resources/js/auth.js', 'public/js')\n+    .js('resources/js/header.js', 'public/js').autoload({\n     \"jquery\": [ '$', 'window.jQuery' ],\n } ).postCss( 'resources/css/app.css', 'public/css', [\n     require( 'postcss-import' ),\n     require( 'tailwindcss' ),\n"
+                },
+                {
+                    "date": 1639057921869,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,10 +10,12 @@\n  | file for the application as well as bundling up all the JS files.\n  |\n  */\n \n-mix.js('resources/js/app.js', 'public/js').js('resources/js/auth.js', 'public/js')\n-    .js('resources/js/header.js', 'public/js').autoload({\n+mix.js('resources/js/app.js', 'public/js')\n+    .js('resources/js/auth.js', 'public/js')\n+    .js('resources/js/header.js', 'public/js')\n+    .autoload({\n     \"jquery\": [ '$', 'window.jQuery' ],\n } ).postCss( 'resources/css/app.css', 'public/css', [\n     require( 'postcss-import' ),\n     require( 'tailwindcss' ),\n"
+                },
+                {
+                    "date": 1639057928293,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,15 +19,5 @@\n } ).postCss( 'resources/css/app.css', 'public/css', [\n     require( 'postcss-import' ),\n     require( 'tailwindcss' ),\n     require( 'autoprefixer' ),\n-]);\n-mix.js('resources/js/app.js', 'public/js').js('resources/js/header.js', 'public/js').autoload({\n-    \"jquery\": ['$', 'window.jQuery'],\n-}).postCss('resources/css/header.css', 'public/css', [\n-    require('postcss-import'),\n-    require('tailwindcss'),\n-    require('autoprefixer'),\n-]);\n-mix.scripts([\n-    'public/assets/js/'headers.js'\n-])\n\\ No newline at end of file\n+]);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1639058586085,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,6 +18,7 @@\n     \"jquery\": [ '$', 'window.jQuery' ],\n } ).postCss( 'resources/css/app.css', 'public/css', [\n     require( 'postcss-import' ),\n     require( 'tailwindcss' ),\n-    require( 'autoprefixer' ),\n+    require('autoprefixer')\n+    \n ]);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1639058592260,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,6 +19,6 @@\n } ).postCss( 'resources/css/app.css', 'public/css', [\n     require( 'postcss-import' ),\n     require( 'tailwindcss' ),\n     require('autoprefixer')\n-    \n+    .post\n ]);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1639058609072,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,6 +19,9 @@\n } ).postCss( 'resources/css/app.css', 'public/css', [\n     require( 'postcss-import' ),\n     require( 'tailwindcss' ),\n     require('autoprefixer')\n-    .post\n+    .postCss('resources/css/app.css', 'public/css', [\n+                require('postcss-import'),\n+                require('tailwindcss'),\n+                require('autoprefixer')\n ]);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1639058629986,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n } ).postCss( 'resources/css/app.css', 'public/css', [\n     require( 'postcss-import' ),\n     require( 'tailwindcss' ),\n     require('autoprefixer')\n-    .postCss('resources/css/app.css', 'public/css', [\n+    .postcss('resources/css/app.css', 'public/css', [\n                 require('postcss-import'),\n                 require('tailwindcss'),\n                 require('autoprefixer')\n ]);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1639058641185,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n } ).postCss( 'resources/css/app.css', 'public/css', [\n     require( 'postcss-import' ),\n     require( 'tailwindcss' ),\n     require('autoprefixer')\n-    .postcss('resources/css/app.css', 'public/css', [\n+    .postcss('resources/css/header.css', 'public/css', [\n                 require('postcss-import'),\n                 require('tailwindcss'),\n                 require('autoprefixer')\n ]);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1639058684880,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,28 @@\n+const mix = require('laravel-mix');\n+\n+/*\n+ |--------------------------------------------------------------------------\n+ | Mix Asset Management\n+ |--------------------------------------------------------------------------\n+ |\n+ | Mix provides a clean, fluent API for defining some Webpack build steps\n+ | for your Laravel applications. By default, we are compiling the CSS\n+ | file for the application as well as bundling up all the JS files.\n+ |\n+ */\n+\n+mix.js('resources/js/app.js', 'public/js')\n+    .js('resources/js/auth.js', 'public/js')\n+    .js('resources/js/header.js', 'public/js')\n+    .autoload({\n+    \"jquery\": [ '$', 'window.jQuery' ],\n+} ).postCss( 'resources/css/app.css', 'public/css', [\n+    require( 'postcss-import' ),\n+    require( 'tailwindcss' ),\n+    require('autoprefixer')\n+]\n+    .postcss('resources/css/header.css', 'public/css', [\n+                require('postcss-import'),\n+                require('tailwindcss'),\n+                require('autoprefixer')\n+]);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1639058693230,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,37 +19,9 @@\n } ).postCss( 'resources/css/app.css', 'public/css', [\n     require( 'postcss-import' ),\n     require( 'tailwindcss' ),\n     require('autoprefixer')\n-]\n-    .postcss('resources/css/header.css', 'public/css', [\n+], 'resources/css/header.css', 'public/css', [\n                 require('postcss-import'),\n                 require('tailwindcss'),\n                 require('autoprefixer')\n-]);\n-const mix = require('laravel-mix');\n-\n-/*\n- |--------------------------------------------------------------------------\n- | Mix Asset Management\n- |--------------------------------------------------------------------------\n- |\n- | Mix provides a clean, fluent API for defining some Webpack build steps\n- | for your Laravel applications. By default, we are compiling the CSS\n- | file for the application as well as bundling up all the JS files.\n- |\n- */\n-\n-mix.js('resources/js/app.js', 'public/js')\n-    .js('resources/js/auth.js', 'public/js')\n-    .js('resources/js/header.js', 'public/js')\n-    .autoload({\n-    \"jquery\": [ '$', 'window.jQuery' ],\n-} ).postCss( 'resources/css/app.css', 'public/css', [\n-    require( 'postcss-import' ),\n-    require( 'tailwindcss' ),\n-    require('autoprefixer')\n-    .postcss('resources/css/header.css', 'public/css', [\n-                require('postcss-import'),\n-                require('tailwindcss'),\n-                require('autoprefixer')\n ]);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1639058716690,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     .js('resources/js/auth.js', 'public/js')\n     .js('resources/js/header.js', 'public/js')\n     .autoload({\n     \"jquery\": [ '$', 'window.jQuery' ],\n-} ).postCss( 'resources/css/app.css', 'public/css', [\n+    } ).postCss( 'resources/css/app.css', 'public/css', [\n     require( 'postcss-import' ),\n     require( 'tailwindcss' ),\n     require('autoprefixer')\n ], 'resources/css/header.css', 'public/css', [\n"
+                },
+                {
+                    "date": 1639058736887,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,10 @@\n     .js('resources/js/auth.js', 'public/js')\n     .js('resources/js/header.js', 'public/js')\n     .autoload({\n     \"jquery\": [ '$', 'window.jQuery' ],\n-    } ).postCss( 'resources/css/app.css', 'public/css', [\n+    })\n+    .postCss('resources/css/app.css', 'public/css', [\n     require( 'postcss-import' ),\n     require( 'tailwindcss' ),\n     require('autoprefixer')\n ], 'resources/css/header.css', 'public/css', [\n"
+                },
+                {
+                    "date": 1639058749673,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n     .postCss('resources/css/app.css', 'public/css', [\n     require( 'postcss-import' ),\n     require( 'tailwindcss' ),\n     require('autoprefixer')\n-], 'resources/css/header.css', 'public/css', [\n+]), 'resources/css/header.css', 'public/css', [\n                 require('postcss-import'),\n                 require('tailwindcss'),\n                 require('autoprefixer')\n ]);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1639058767393,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n     .postCss('resources/css/app.css', 'public/css', [\n     require( 'postcss-import' ),\n     require( 'tailwindcss' ),\n     require('autoprefixer')\n-]), 'resources/css/header.css', 'public/css', [\n+]).ostCss('resources/css/header.css', 'public/css', [\n                 require('postcss-import'),\n                 require('tailwindcss'),\n                 require('autoprefixer')\n ]);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1639058781548,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n     .postCss('resources/css/app.css', 'public/css', [\n     require( 'postcss-import' ),\n     require( 'tailwindcss' ),\n     require('autoprefixer')\n-]).ostCss('resources/css/header.css', 'public/css', [\n+    ]).postCss('resources/css/header.css', 'public/css', [\n                 require('postcss-import'),\n                 require('tailwindcss'),\n                 require('autoprefixer')\n ]);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1639058791347,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,10 @@\n     .postCss('resources/css/app.css', 'public/css', [\n     require( 'postcss-import' ),\n     require( 'tailwindcss' ),\n     require('autoprefixer')\n-    ]).postCss('resources/css/header.css', 'public/css', [\n-                require('postcss-import'),\n-                require('tailwindcss'),\n-                require('autoprefixer')\n+    ])\n+    .postCss('resources/css/header.css', 'public/css', [\n+            require('postcss-import'),\n+            require('tailwindcss'),\n+            require('autoprefixer')\n ]);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1639058809445,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,8 +22,8 @@\n     require( 'tailwindcss' ),\n     require('autoprefixer')\n     ])\n     .postCss('resources/css/header.css', 'public/css', [\n-            require('postcss-import'),\n-            require('tailwindcss'),\n-            require('autoprefixer')\n+    require('postcss-import'),\n+    require('tailwindcss'),\n+    require('autoprefixer')\n ]);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1639630405010,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,20 +10,21 @@\n  | file for the application as well as bundling up all the JS files.\n  |\n  */\n \n-mix.js('resources/js/app.js', 'public/js')\n-    .js('resources/js/auth.js', 'public/js')\n-    .js('resources/js/header.js', 'public/js')\n+mix.js(\"resources/js/app.js\", \"public/js\")\n+    .js(\"resources/js/auth.js\", \"public/js\")\n+    .js(\"resources/js/header.js\", \"public/js\")\n+    .js(\"resources/js/header.js\", \"public/js\")\n     .autoload({\n-    \"jquery\": [ '$', 'window.jQuery' ],\n+        jquery: [\"$\", \"window.jQuery\"],\n     })\n-    .postCss('resources/css/app.css', 'public/css', [\n-    require( 'postcss-import' ),\n-    require( 'tailwindcss' ),\n-    require('autoprefixer')\n+    .postCss(\"resources/css/app.css\", \"public/css\", [\n\\ No newline at end of file\n+        require(\"postcss-import\"),\n+        require(\"tailwindcss\"),\n+        require(\"autoprefixer\"),\n     ])\n-    .postCss('resources/css/header.css', 'public/css', [\n-    require('postcss-import'),\n-    require('tailwindcss'),\n-    require('autoprefixer')\n-]);\n+    .postCss(\"resources/css/header.css\", \"public/css\", [\n+        require(\"postcss-import\"),\n+        require(\"tailwindcss\"),\n+        require(\"autoprefixer\"),\n+    ]);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1639630410959,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n \n mix.js(\"resources/js/app.js\", \"public/js\")\n     .js(\"resources/js/auth.js\", \"public/js\")\n     .js(\"resources/js/header.js\", \"public/js\")\n-    .js(\"resources/js/header.js\", \"public/js\")\n+    .js(\"resources/js/account.js\", \"public/js\")\n     .autoload({\n         jquery: [\"$\", \"window.jQuery\"],\n     })\n     .postCss(\"resources/css/app.css\", \"public/css\", [\n"
+                },
+                {
+                    "date": 1639630417145,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,5 +26,10 @@\n     .postCss(\"resources/css/header.css\", \"public/css\", [\n         require(\"postcss-import\"),\n         require(\"tailwindcss\"),\n         require(\"autoprefixer\"),\n+    ]);\n+    .postCss(\"resources/css/header.css\", \"public/css\", [\n+        require(\"postcss-import\"),\n+        require(\"tailwindcss\"),\n+        require(\"autoprefixer\"),\n     ]);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1639630425122,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n         require(\"postcss-import\"),\n         require(\"tailwindcss\"),\n         require(\"autoprefixer\"),\n     ]);\n-    .postCss(\"resources/css/header.css\", \"public/css\", [\n+    .postCss(\"resources/css/account.css\", \"public/css\", [\n         require(\"postcss-import\"),\n         require(\"tailwindcss\"),\n         require(\"autoprefixer\"),\n     ]);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1639630488369,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n     .postCss(\"resources/css/header.css\", \"public/css\", [\n         require(\"postcss-import\"),\n         require(\"tailwindcss\"),\n         require(\"autoprefixer\"),\n-    ]);\n+    ])\n     .postCss(\"resources/css/account.css\", \"public/css\", [\n         require(\"postcss-import\"),\n         require(\"tailwindcss\"),\n         require(\"autoprefixer\"),\n"
+                },
+                {
+                    "date": 1639632422100,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n         require(\"postcss-import\"),\n         require(\"tailwindcss\"),\n         require(\"autoprefixer\"),\n     ])\n-    .postCss(\"resources/css/header.css\", \"public/css\", [\n+    .postCss(\"resources/css/common.css\", \"public/css\", [\n         require(\"postcss-import\"),\n         require(\"tailwindcss\"),\n         require(\"autoprefixer\"),\n     ])\n"
+                },
+                {
+                    "date": 1639632431544,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n  */\n \n mix.js(\"resources/js/app.js\", \"public/js\")\n     .js(\"resources/js/auth.js\", \"public/js\")\n-    .js(\"resources/js/header.js\", \"public/js\")\n+    .js(\"resources/js/common.js\", \"public/js\")\n     .js(\"resources/js/account.js\", \"public/js\")\n     .autoload({\n         jquery: [\"$\", \"window.jQuery\"],\n     })\n"
+                },
+                {
+                    "date": 1639632715339,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n  |\n  */\n \n mix.js(\"resources/js/app.js\", \"public/js\")\n-    .js(\"resources/js/auth.js\", \"public/js\")\n+    .js(\"resources/js/.js\", \"public/js\")\n     .js(\"resources/js/common.js\", \"public/js\")\n     .js(\"resources/js/account.js\", \"public/js\")\n     .autoload({\n         jquery: [\"$\", \"window.jQuery\"],\n"
+                },
+                {
+                    "date": 1639633203690,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n  |\n  */\n \n mix.js(\"resources/js/app.js\", \"public/js\")\n-    .js(\"resources/js/.js\", \"public/js\")\n+    .js(\"resources/js/a.js\", \"public/js\")\n     .js(\"resources/js/common.js\", \"public/js\")\n     .js(\"resources/js/account.js\", \"public/js\")\n     .autoload({\n         jquery: [\"$\", \"window.jQuery\"],\n"
+                },
+                {
+                    "date": 1639633541286,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n  |\n  */\n \n mix.js(\"resources/js/app.js\", \"public/js\")\n-    .js(\"resources/js/a.js\", \"public/js\")\n+    .js(\"resources/js/auth.js\", \"public/js\")\n     .js(\"resources/js/common.js\", \"public/js\")\n     .js(\"resources/js/account.js\", \"public/js\")\n     .autoload({\n         jquery: [\"$\", \"window.jQuery\"],\n"
+                },
+                {
+                    "date": 1639633557250,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,9 @@\n  */\n \n mix.js(\"resources/js/app.js\", \"public/js\")\n     .js(\"resources/js/auth.js\", \"public/js\")\n+    .js(\"resources/js/auth.js\", \"public/js\")\n     .js(\"resources/js/common.js\", \"public/js\")\n     .js(\"resources/js/account.js\", \"public/js\")\n     .autoload({\n         jquery: [\"$\", \"window.jQuery\"],\n"
+                },
+                {
+                    "date": 1639633569349,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,10 +11,9 @@\n  |\n  */\n \n mix.js(\"resources/js/app.js\", \"public/js\")\n-    .js(\"resources/js/auth.js\", \"public/js\")\n-    .js(\"resources/js/auth.js\", \"public/js\")\n+    .js(\"resources/js/auth-check.js\", \"public/js\")\n     .js(\"resources/js/common.js\", \"public/js\")\n     .js(\"resources/js/account.js\", \"public/js\")\n     .autoload({\n         jquery: [\"$\", \"window.jQuery\"],\n"
+                }
+            ],
+            "date": 1638970518747,
+            "name": "Commit-0",
+            "content": "const mix = require('laravel-mix');\n\n/*\n |--------------------------------------------------------------------------\n | Mix Asset Management\n |--------------------------------------------------------------------------\n |\n | Mix provides a clean, fluent API for defining some Webpack build steps\n | for your Laravel applications. By default, we are compiling the CSS\n | file for the application as well as bundling up all the JS files.\n |\n */\n\nmix.js( 'resources/js/app.js', 'public/js' ).js( 'resources/js/auth.js', 'public/js' ).autoload( {\n    \"jquery\": [ '$', 'window.jQuery' ],\n} ).postCss( 'resources/css/app.css', 'public/css', [\n    require( 'postcss-import' ),\n    require( 'tailwindcss' ),\n    require( 'autoprefixer' ),\n]);\nmix.js('resources/js/app.js', 'public/js').js('resources/js/auth.js', 'public/js').autoload({\n    \"jquery\": ['$', 'window.jQuery'],\n}).postCss('resources/css/app.css', 'public/css', [\n    require('postcss-import'),\n    require('tailwindcss'),\n    require('autoprefixer'),\n]);"
+        }
+    ]
+}

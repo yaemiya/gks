@@ -1,0 +1,26 @@
+{
+    "sourceFile": "resources/js/app.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1639802484461,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1639802490666,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,10 @@\n window.Alpine = Alpine;\n \n Alpine.start();\n \n-tion () {\n+$(function () {\n+    \n     // 子要素があれば下矢印を入れる\n     $(\"ul.dropdwn_menu>li\").each(function () {\n         var num = $(this).children().children().length;\n         if (num !== 0) {\n"
+                },
+                {
+                    "date": 1639802496518,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n \n Alpine.start();\n \n $(function () {\n-    \n+    ど\n     // 子要素があれば下矢印を入れる\n     $(\"ul.dropdwn_menu>li\").each(function () {\n         var num = $(this).children().children().length;\n         if (num !== 0) {\n"
+                }
+            ],
+            "date": 1639802484461,
+            "name": "Commit-0",
+            "content": "require('./bootstrap');\n\nimport Alpine from 'alpinejs';\n\nwindow.Alpine = Alpine;\n\nAlpine.start();\n\ntion () {\n    // 子要素があれば下矢印を入れる\n    $(\"ul.dropdwn_menu>li\").each(function () {\n        var num = $(this).children().children().length;\n        if (num !== 0) {\n            $(this)\n                .children(\"a\")\n                .append(\n                    '<span class=\"triangle_down float-right mr-2 mt-4\"></span>'\n                );\n        }\n    });\n\n    // 子要素があれば右矢印を入れる\n    $(\"ul.sub2>li\").each(function () {\n        var num = $(this).children().children().length;\n        if (num !== 0) {\n            $(this)\n                .children(\"a\")\n                .append(\n                    '<span class=\"triangle_right float-right mr-1 mt-2\"></span>'\n                );\n        }\n    });\n\n    // 選択処理\n    $(\"ul.dropdwn_menu li\").hover(\n        function () {\n            $(\">ul:not(:animated)\", this).slideDown(\"slow\");\n        },\n        function () {\n            $(\">ul\", this).slideUp(\"slow\");\n        }\n    );\n});"
+        }
+    ]
+}

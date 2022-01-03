@@ -1,0 +1,22 @@
+{
+    "sourceFile": "resources/views/components/responsive-nav-link.blade.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1639277712198,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1639277717452,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n @props(['active'])\n \n @php\n $classes = ($active ?? false)\n-            ? 'block pl-3 pr-4 py-2 border-l-4 border-indigo-400 text-base fon text-indigo-700 bg-indigo-50 focus:outline-none focus:text-indigo-800 focus:bg-indigo-100 focus:border-indigo-700 transition duration-150 ease-in-out'\n-            : 'block pl-3 pr-4 py-2 border-l-4 border-transparent text-base fon text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out';\n+            ? 'block pl-3 pr-4 py-2 border-l-4 border-indigo-400 text-base font-small text-indigo-700 bg-indigo-50 focus:outline-none focus:text-indigo-800 focus:bg-indigo-100 focus:border-indigo-700 transition duration-150 ease-in-out'\n+            : 'block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-small text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out';\n @endphp\n \n <a {{ $attributes->merge(['class' => $classes]) }}>\n     {{ $slot }}\n"
+                }
+            ],
+            "date": 1639277712198,
+            "name": "Commit-0",
+            "content": "@props(['active'])\n\n@php\n$classes = ($active ?? false)\n            ? 'block pl-3 pr-4 py-2 border-l-4 border-indigo-400 text-base fon text-indigo-700 bg-indigo-50 focus:outline-none focus:text-indigo-800 focus:bg-indigo-100 focus:border-indigo-700 transition duration-150 ease-in-out'\n            : 'block pl-3 pr-4 py-2 border-l-4 border-transparent text-base fon text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out';\n@endphp\n\n<a {{ $attributes->merge(['class' => $classes]) }}>\n    {{ $slot }}\n</a>\n"
+        }
+    ]
+}

@@ -5367,26 +5367,68 @@ $(function () {
     }
   }); // 選択処理
 
-  $("ul.dropdwn_menu li").on('hover', function () {
+  $("ul.dropdwn_menu li").hover(function () {
     $(">ul:not(:animated)", this).slideDown("slow");
   }, function () {
     $(">ul", this).slideUp("slow");
   }); // モーダルオープン
 
-  $('#openModal').on('click', function () {
-    $('#modalArea').fadeIn();
+  $("#openModal").on("click", function () {
+    $("body").css("overflow-y", "hidden"); // 本文の縦スクロールを無効
+
+    $("#modalArea").fadeIn();
+  }); // 選択モーダルオープン
+
+  $("#openSelectModal").on("click", function () {
+    $("body").css("overflow-y", "hidden"); // 本文の縦スクロールを無効
+
+    $("#selectModalArea").fadeIn();
   }); // モーダルクローズ
 
-  $('#closeModal , #modalBg').on('click', function () {
-    $('#modalArea').fadeOut();
+  $("#closeModal , #modalBg").on("click", function () {
+    $("#modalArea").fadeOut();
+    $("body").css("overflow-y", "auto"); // 本文の縦スクロールを有効
+  }); // 選択モーダルクローズ
+
+  $("#closeSelectModal , #selectModalBg").on("click", function () {
+    $("#selectModalArea").fadeOut();
+    $("body").css("overflow-y", "auto"); // 本文の縦スクロールを有効
   }); // モーダル内で新規登録ボタンクリック時
 
-  $('#registerBtn').on('click', function () {
-    $('form').submit();
+  $("#registerBtn").on("click", function () {
+    $("form").submit();
   }); // モーダル内で更新ボタンクリック時
 
-  $('#updateBtn').on('click', function () {
-    $('form').submit();
+  $("#updateBtn").on("click", function () {
+    $("form").submit();
+  }); // 選択モーダルで選択後にテキストボックスに値を入れる
+
+  $("#selectModalList li").on("click", function () {
+    var modalSelected = $(this).find("a").text();
+    $("#modalSelected").text(modalSelected);
+    $("#selectedData").val(modalSelected);
+    $("#selectedId").val($(this).data("id"));
+    $("#closeSelectModal").trigger("click");
+  });
+  $("#searchrBtn").on("click", function () {
+    //半角スペース区切りの文字を配列に格納する
+    var searchArr = $("#searchBox").val().trim().split(/\s+/); // 格納した文字が店舗リストにマッチすれば表示
+
+    $("#selectModalList ul li").each(function () {
+      var list = $(this);
+      var cnt = 0;
+      searchArr.forEach(function (word) {
+        if (list.text().indexOf(word) === -1) {
+          cnt++;
+        }
+      });
+
+      if (cnt > 0) {
+        list.hide();
+      } else {
+        list.show();
+      }
+    });
   });
 });
 

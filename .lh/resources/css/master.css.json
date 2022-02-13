@@ -1,0 +1,46 @@
+{
+    "sourceFile": "resources/css/master.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1641193591137,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1641193599335,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,7 +47,5 @@\n }\r\n \r\n .registerTable .tr{\r\n     height: 42px;\r\n-    border-collapse: collapse;\r\n-    margin: 0 auto;\r\n }\r\n"
+                },
+                {
+                    "date": 1641194486316,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,13 @@\n }\r\n \r\n .registerTable{\r\n     width: 600px;\r\n+    border-collapse: collapse;\r\n+    margin: 0 auto;\r\n }\r\n \r\n .registerTable .tr{\r\n     height: 42px;\r\n }\r\n+\r\n+\r\n"
+                },
+                {
+                    "date": 1641194494494,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,5 +51,5 @@\n .registerTable .tr{\r\n     height: 42px;\r\n }\r\n \r\n-\r\n+.registerT\r\n"
+                },
+                {
+                    "date": 1641194504085,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,5 +51,7 @@\n .registerTable .tr{\r\n     height: 42px;\r\n }\r\n \r\n-.registerT\r\n+.registerTd{\r\n+    padding\r\n+}\r\n"
+                },
+                {
+                    "date": 1641194509431,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,6 +52,6 @@\n     height: 42px;\r\n }\r\n \r\n .registerTd{\r\n-    padding\r\n+    padding-left: 0\r\n }\r\n"
+                },
+                {
+                    "date": 1641194514896,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,6 +52,6 @@\n     height: 42px;\r\n }\r\n \r\n .registerTd{\r\n-    padding-left: 0\r\n+    padding-left: 0 important!\r\n }\r\n"
+                },
+                {
+                    "date": 1641194592769,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,5 +53,6 @@\n }\r\n \r\n .registerTd{\r\n     padding-left: 0 important!\r\n+    border: 1px solid black;\r\n }\r\n"
+                }
+            ],
+            "date": 1641193591137,
+            "name": "Commit-0",
+            "content": "@charset \"UTF-8\";\r\n\r\n.formContainer {\r\n    width: 1100px;\r\n    margin: 0 auto;\r\n    padding: 60px;\r\n    background-color: whitesmoke;\r\n}\r\n\r\n.formContainerForPut {\r\n    width: 900px;\r\n    margin: 0 auto;\r\n    padding: 60px;\r\n    background-color: whitesmoke;\r\n}\r\n\r\n.formMain {\r\n    width: 800px;\r\n    margin: 0 auto;\r\n}\r\n\r\n.formMainForPut {\r\n    width: 600px;\r\n    margin: 0 auto;\r\n}\r\n\r\n\r\n/* テーブル */\r\n.indexTable{\r\n    width: 800px;\r\n}\r\n\r\n.tId{\r\n    width: 150px;\r\n}\r\n\r\n.tName{\r\n    width: 400px;\r\n}\r\n\r\n.tRepName{\r\n    width: 250px;\r\n}\r\n\r\n.registerTable{\r\n    width: 600px;\r\n}\r\n\r\n.registerTable .tr{\r\n    height: 42px;\r\n    border-collapse: collapse;\r\n    margin: 0 auto;\r\n}\r\n"
+        }
+    ]
+}

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 61,
+            "activePatchIndex": 62,
             "patches": [
                 {
                     "date": 1638970518747,
@@ -252,6 +252,10 @@
                 {
                     "date": 1639633569349,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,10 +11,9 @@\n  |\n  */\n \n mix.js(\"resources/js/app.js\", \"public/js\")\n-    .js(\"resources/js/auth.js\", \"public/js\")\n-    .js(\"resources/js/auth.js\", \"public/js\")\n+    .js(\"resources/js/auth-check.js\", \"public/js\")\n     .js(\"resources/js/common.js\", \"public/js\")\n     .js(\"resources/js/account.js\", \"public/js\")\n     .autoload({\n         jquery: [\"$\", \"window.jQuery\"],\n"
+                },
+                {
+                    "date": 1641686083003,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,24 +12,24 @@\n  */\n \n mix.js(\"resources/js/app.js\", \"public/js\")\n     .js(\"resources/js/auth-check.js\", \"public/js\")\n-    .js(\"resources/js/common.js\", \"public/js\")\n     .js(\"resources/js/account.js\", \"public/js\")\n+    .js(\"resources/js/supplier.js\", \"public/js\")\n     .autoload({\n         jquery: [\"$\", \"window.jQuery\"],\n     })\n     .postCss(\"resources/css/app.css\", \"public/css\", [\n         require(\"postcss-import\"),\n         require(\"tailwindcss\"),\n         require(\"autoprefixer\"),\n     ])\n-    .postCss(\"resources/css/common.css\", \"public/css\", [\n+    .postCss(\"resources/css/account.css\", \"public/css\", [\n         require(\"postcss-import\"),\n         require(\"tailwindcss\"),\n         require(\"autoprefixer\"),\n     ])\n-    .postCss(\"resources/css/account.css\", \"public/css\", [\n+    .postCss(\"resources/css/master.css\", \"public/css\", [\n         require(\"postcss-import\"),\n         require(\"tailwindcss\"),\n         require(\"autoprefixer\"),\n     ]);\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1638970518747,

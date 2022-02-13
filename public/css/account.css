@@ -24,22 +24,3 @@
   margin: 0 auto;
 }
 
-.btn {
-  margin-bottom: 0.5rem;
-  cursor: pointer;
-  border-radius: 0.25rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
-.putBtn {
-  margin-top: 1.5rem;
-  border-radius: 0.25rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-

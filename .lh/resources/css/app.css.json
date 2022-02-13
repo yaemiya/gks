@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 28,
+            "activePatchIndex": 76,
             "patches": [
                 {
                     "date": 1639797890897,
@@ -120,6 +120,198 @@
                 {
                     "date": 1639867335463,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -136,9 +136,9 @@\n   /* テーブル */\n table{\n   width: 100%;\n   border-collapse: collapse;\n-  text-align: center;\n+  /* text-align: center; */\n }\n th{\n   border: 1px solid black;\n }\n"
+                },
+                {
+                    "date": 1641192651492,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,62 +97,151 @@\n }\n \n /* 各ページ共通 */\n .pageView {\n-    margin-top: 10px;\n+    padding: 20px;\n     margin-left: 10px;\n     font-size: 16px;\n }\n \n-.container{\n-    width: 1300px;\n-    margin: 0 auto;\n-    padding: 20px;\n-    background-color: whitesmoke;\n-}\n-\n .title {\n-    margin-top: 20px;\n+    /* margin-top: 20px; */\n+    margin-bottom: 30px;\n     font-size: 25px;\n     text-align: center;\n }\n \n /* ボタン */\n-  .btn {\n-    @apply py-1 px-4 mb-1 rounded;\n-  }\n-  .btn-green {\n-    @apply bg-green-500 text-white;\n-  }\n-  .btn-green:hover {\n+.btn {\n+    @apply py-1 px-4 mb-2 rounded cursor-pointer;\n+}\n+\n+.putBtn {\n+    @apply py-1 px-8 mt-6 rounded;\n+}\n+\n+.addressSearchBtn{\n+    @apply  rounded text-xs mt-1 ml-12 px-7 py-2;\n+}\n+\n+.btn-green {\n+    @apply bg-green-600 text-white;\n+}\n+\n+.btn-green:hover {\n     @apply bg-green-400;\n-  }\n-  .btn-red {\n-    @apply bg-red-500 text-white;\n-  }\n-  .btn-red:hover {\n+}\n+\n+.btn-blue {\n+    @apply bg-blue-600 text-white;\n+}\n+\n+.btn-blue:hover {\n+    @apply bg-blue-400;\n+}\n+\n+.btn-red {\n+    @apply bg-red-600 text-white;\n+}\n+\n+.btn-red:hover {\n     @apply bg-red-400;\n-  }\n+}\n \n-  /* テーブル */\n-table{\n-  width: 100%;\n-  border-collapse: collapse;\n-  /* text-align: center; */\n+.btn-gray {\n+    @apply bg-gray-600 text-white;\n }\n-th{\n-  border: 1px solid black;\n+\n+.btn-gray:hover {\n+    @apply bg-gray-400;\n }\n-td{\n-  border: 1px solid black;\n+\n+.btn-black {\n+    @apply bg-black text-white;\n }\n-thead th{\n-  height: 35px;\n-  background-color: gray;\n-  color: white;\n+\n+.btn-black:hover {\n+    @apply bg-gray-500;\n }\n-tbody td{\n-  height: 45px;\n+\n+.btn-disabled {\n+    @apply bg-gray-400 text-white;\n }\n-tbody tr:nth-child(2n){\n-  background-color: lightgray;\n+\n+.notAllowed {\n+    cursor: not-allowed !important;\n }\n+\n+\n+/* テーブル */\n+.table {\n+    border-collapse: collapse;\n+    margin: 0 auto;\n+}\n+\n+th {\n+    border: 1px solid black;\n+}\n+\n+td {\n+    border: 1px solid black;\n+    padding-left: 10px;\n+}\n+\n+thead th {\n+    height: 35px;\n+    background-color: gray;\n+    color: white;\n+}\n+\n+tbody td {\n+    height: 45px;\n+}\n+\n+tbody tr:nth-child(2n) {\n+    background-color: #dcdcdc;\n+}\n+\n+tbody a {\n+    color: blue;\n+}\n+\n+tbody td a:hover {\n+    text-decoration: underline;\n+}\n+\n+\n+/* モーダルCSS */\n+.modalArea {\n+    display: none;\n+    position: fixed;\n+    z-index: 10;\n+    /*サイトによってここの数値は調整 */\n+    top: 0;\n+    left: 0;\n+    width: 100%;\n+    height: 100%;\n+}\n+\n+.modalBg {\n+    width: 100%;\n+    height: 100%;\n+    background-color: rgba(30, 30, 30, 0.9);\n+}\n+\n+.modalWrapper {\n+    position: absolute;\n+    top: 50%;\n+    left: 50%;\n+    transform: translate(-50%, -50%);\n+    width: 70%;\n+    max-width: 500px;\n+    padding: 30px 40px;\n+    background-color: #fff;\n+}\n+\n+.closeModal {\n+    position: absolute;\n+    top: 0.5rem;\n+    right: 1rem;\n+    cursor: pointer;\n+}\n"
+                },
+                {
+                    "date": 1641192659082,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -177,9 +177,9 @@\n     border-collapse: collapse;\n     margin: 0 auto;\n }\n \n-th {\n+.th {\n     border: 1px solid black;\n }\n \n td {\n"
+                },
+                {
+                    "date": 1641192665215,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -181,20 +181,20 @@\n .th {\n     border: 1px solid black;\n }\n \n-td {\n+.td {\n     border: 1px solid black;\n     padding-left: 10px;\n }\n \n-thead th {\n+.thead .th {\n     height: 35px;\n     background-color: gray;\n     color: white;\n }\n \n-tbody td {\n+.tbody td {\n     height: 45px;\n }\n \n tbody tr:nth-child(2n) {\n"
+                },
+                {
+                    "date": 1641192678864,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -192,13 +192,13 @@\n     background-color: gray;\n     color: white;\n }\n \n-.tbody td {\n+.tbody .td {\n     height: 45px;\n }\n \n-tbody tr:nth-child(2n) {\n+.tbody tr:nth-child(2n) {\n     background-color: #dcdcdc;\n }\n \n tbody a {\n"
+                },
+                {
+                    "date": 1641192685827,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -196,13 +196,13 @@\n .tbody .td {\n     height: 45px;\n }\n \n-.tbody tr:nth-child(2n) {\n+.tbody .tr:nth-child(2n) {\n     background-color: #dcdcdc;\n }\n \n-tbody a {\n+.tbody a {\n     color: blue;\n }\n \n tbody td a:hover {\n"
+                },
+                {
+                    "date": 1641192691840,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -204,9 +204,9 @@\n .tbody a {\n     color: blue;\n }\n \n-tbody td a:hover {\n+.tbody .td a:hover {\n     text-decoration: underline;\n }\n \n \n"
+                },
+                {
+                    "date": 1641192843165,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -173,8 +173,9 @@\n \n \n /* テーブル */\n .table {\n+    width:\n     border-collapse: collapse;\n     margin: 0 auto;\n }\n \n"
+                },
+                {
+                    "date": 1641192848618,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -173,9 +173,9 @@\n \n \n /* テーブル */\n .table {\n-    width:\n+    width: 800px;\n     border-collapse: collapse;\n     margin: 0 auto;\n }\n \n"
+                },
+                {
+                    "date": 1641193299096,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -189,9 +189,9 @@\n }\n \n .thead .th {\n     height: 35px;\n-    background-color: gray;\n+    background-color: dargray;\n     color: white;\n }\n \n .tbody .td {\n"
+                },
+                {
+                    "date": 1641193376492,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -189,18 +189,18 @@\n }\n \n .thead .th {\n     height: 35px;\n-    background-color: dargray;\n+    background-color: darkgray;\n     color: white;\n }\n \n .tbody .td {\n     height: 45px;\n }\n \n .tbody .tr:nth-child(2n) {\n-    background-color: #dcdcdc;\n+    background-color: #f;\n }\n \n .tbody a {\n     color: blue;\n"
+                },
+                {
+                    "date": 1641193389332,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -189,18 +189,18 @@\n }\n \n .thead .th {\n     height: 35px;\n-    background-color: darkgray;\n+    background-color: #;\n     color: white;\n }\n \n .tbody .td {\n     height: 45px;\n }\n \n .tbody .tr:nth-child(2n) {\n-    background-color: #f;\n+    background-color: #f5f5f5;\n }\n \n .tbody a {\n     color: blue;\n"
+                },
+                {
+                    "date": 1641193491195,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -189,18 +189,18 @@\n }\n \n .thead .th {\n     height: 35px;\n-    background-color: #;\n+    background-color: #696969;\n     color: white;\n }\n \n .tbody .td {\n     height: 45px;\n }\n \n .tbody .tr:nth-child(2n) {\n-    background-color: #f5f5f5;\n+    background-color: #dcdcdc;\n }\n \n .tbody a {\n     color: blue;\n"
+                },
+                {
+                    "date": 1641607094613,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -215,9 +215,8 @@\n .modalArea {\n     display: none;\n     position: fixed;\n     z-index: 10;\n-    /*サイトによってここの数値は調整 */\n     top: 0;\n     left: 0;\n     width: 100%;\n     height: 100%;\n"
+                },
+                {
+                    "date": 1641609065245,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n @import 'tailwindcss/base';\n @import 'tailwindcss/components';\n @import 'tailwindcss/utilities';\n \n+\n /* ドロップダウンメニュー */\n .dropdwn_menu {\n     zoom: 1;\n     background-color: black;\n"
+                },
+                {
+                    "date": 1641609331730,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n @import 'tailwindcss/base';\n @import 'tailwindcss/components';\n @import 'tailwindcss/utilities';\n \n-\n+.screen\n /* ドロップダウンメニュー */\n .dropdwn_menu {\n     zoom: 1;\n     background-color: black;\n"
+                },
+                {
+                    "date": 1641609338612,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,11 @@\n @import 'tailwindcss/base';\n @import 'tailwindcss/components';\n @import 'tailwindcss/utilities';\n \n-.screen\n+.screen{\n+    min-width\n+}\n /* ドロップダウンメニュー */\n .dropdwn_menu {\n     zoom: 1;\n     background-color: black;\n"
+                },
+                {
+                    "date": 1641609344455,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n @import 'tailwindcss/components';\n @import 'tailwindcss/utilities';\n \n .screen{\n-    min-width\n+    min-width; 95\n }\n /* ドロップダウンメニュー */\n .dropdwn_menu {\n     zoom: 1;\n"
+                },
+                {
+                    "date": 1641609351430,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n @import 'tailwindcss/components';\n @import 'tailwindcss/utilities';\n \n .screen{\n-    min-width; 95\n+    min-width; 950px;\n }\n /* ドロップダウンメニュー */\n .dropdwn_menu {\n     zoom: 1;\n"
+                },
+                {
+                    "date": 1641609391936,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n \n .screen{\n     min-width; 950px;\n }\n+\n /* ドロップダウンメニュー */\n .dropdwn_menu {\n     zoom: 1;\n     background-color: black;\n"
+                },
+                {
+                    "date": 1641609413511,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n @import 'tailwindcss/components';\n @import 'tailwindcss/utilities';\n \n .screen{\n-    min-width; 950px;\n+    min-width: 950px;\n }\n \n /* ドロップダウンメニュー */\n .dropdwn_menu {\n"
+                },
+                {
+                    "date": 1641609420767,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n @import 'tailwindcss/base';\n @import 'tailwindcss/components';\n @import 'tailwindcss/utilities';\n \n+\n .screen{\n     min-width: 950px;\n }\n \n"
+                },
+                {
+                    "date": 1641609425991,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n @import 'tailwindcss/base';\n @import 'tailwindcss/components';\n @import 'tailwindcss/utilities';\n \n-\n+画面幅\n .screen{\n     min-width: 950px;\n }\n \n"
+                },
+                {
+                    "date": 1641609436879,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n @import 'tailwindcss/base';\n @import 'tailwindcss/components';\n @import 'tailwindcss/utilities';\n \n-画面幅\n+/* 最小画面幅 */\n .screen{\n     min-width: 950px;\n }\n \n"
+                },
+                {
+                    "date": 1641622728632,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -243,8 +243,19 @@\n     padding: 30px 40px;\n     background-color: #fff;\n }\n \n+.modalWrapper {\n+    position: absolute;\n+    top: 50%;\n+    left: 50%;\n+    transform: translate(-50%, -50%);\n+    width: 70%;\n+    max-width: 500px;\n+    padding: 30px 40px;\n+    background-color: #fff;\n+}\n+\n .closeModal {\n     position: absolute;\n     top: 0.5rem;\n     right: 1rem;\n"
+                },
+                {
+                    "date": 1641622736451,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -243,9 +243,9 @@\n     padding: 30px 40px;\n     background-color: #fff;\n }\n \n-.modalWrapper {\n+.selectModalWrapper {\n     position: absolute;\n     top: 50%;\n     left: 50%;\n     transform: translate(-50%, -50%);\n"
+                },
+                {
+                    "date": 1641625991786,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -171,8 +171,10 @@\n .btn-disabled {\n     @apply bg-gray-400 text-white;\n }\n \n+\n+\n .notAllowed {\n     cursor: not-allowed !important;\n }\n \n"
+                },
+                {
+                    "date": 1641625999486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -171,15 +171,14 @@\n .btn-disabled {\n     @apply bg-gray-400 text-white;\n }\n \n-\n-\n .notAllowed {\n     cursor: not-allowed !important;\n }\n \n \n+\n /* テーブル */\n .table {\n     width: 800px;\n     border-collapse: collapse;\n"
+                },
+                {
+                    "date": 1641626005540,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -175,10 +175,10 @@\n .notAllowed {\n     cursor: not-allowed !important;\n }\n \n+.searchBtn\n \n-\n /* テーブル */\n .table {\n     width: 800px;\n     border-collapse: collapse;\n"
+                },
+                {
+                    "date": 1641626028559,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -175,10 +175,13 @@\n .notAllowed {\n     cursor: not-allowed !important;\n }\n \n-.searchBtn\n+.searchBtn{\n+    @apply py-1 px-4 mb-2 rounded cursor-pointer;\n \n+}\n+\n /* テーブル */\n .table {\n     width: 800px;\n     border-collapse: collapse;\n"
+                },
+                {
+                    "date": 1641626042665,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -176,9 +176,9 @@\n     cursor: not-allowed !important;\n }\n \n .searchBtn{\n-    @apply py-1 px-4 mb-2 rounded cursor-pointer;\n+    @apply py-1 px-4 rounded cursor-pointer;\n \n }\n \n /* テーブル */\n"
+                },
+                {
+                    "date": 1641626413890,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -176,9 +176,9 @@\n     cursor: not-allowed !important;\n }\n \n .searchBtn{\n-    @apply py-1 px-4 rounded cursor-pointer;\n+    @apply py-1 px-4 cursor-pointer;\n \n }\n \n /* テーブル */\n"
+                },
+                {
+                    "date": 1641685243680,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -253,9 +253,9 @@\n     top: 50%;\n     left: 50%;\n     transform: translate(-50%, -50%);\n     width: 70%;\n-    max-width: 500px;\n+    max-width: 700px;\n     padding: 30px 40px;\n     background-color: #fff;\n }\n \n"
+                },
+                {
+                    "date": 1641685317026,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -253,9 +253,9 @@\n     top: 50%;\n     left: 50%;\n     transform: translate(-50%, -50%);\n     width: 70%;\n-    max-width: 700px;\n+    max-width: 600px;\n     padding: 30px 40px;\n     background-color: #fff;\n }\n \n"
+                },
+                {
+                    "date": 1641685323391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -253,9 +253,9 @@\n     top: 50%;\n     left: 50%;\n     transform: translate(-50%, -50%);\n     width: 70%;\n-    max-width: 600px;\n+    max-width: 500px;\n     padding: 30px 40px;\n     background-color: #fff;\n }\n \n"
+                },
+                {
+                    "date": 1641720191187,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -180,8 +180,9 @@\n     @apply py-1 px-4 cursor-pointer;\n \n }\n \n+\n /* テーブル */\n .table {\n     width: 800px;\n     border-collapse: collapse;\n"
+                },
+                {
+                    "date": 1641720197243,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -180,8 +180,9 @@\n     @apply py-1 px-4 cursor-pointer;\n \n }\n \n+いんぷ\n \n /* テーブル */\n .table {\n     width: 800px;\n"
+                },
+                {
+                    "date": 1641720203021,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -180,9 +180,9 @@\n     @apply py-1 px-4 cursor-pointer;\n \n }\n \n-いんぷ\n+/* インプットボックス */\n \n /* テーブル */\n .table {\n     width: 800px;\n"
+                },
+                {
+                    "date": 1641720211153,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -181,9 +181,11 @@\n \n }\n \n /* インプットボックス */\n+.search\n \n+\n /* テーブル */\n .table {\n     width: 800px;\n     border-collapse: collapse;\n"
+                },
+                {
+                    "date": 1641720217306,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -181,9 +181,11 @@\n \n }\n \n /* インプットボックス */\n-.search\n+.searchBox{\n+    \n+}\n \n \n /* テーブル */\n .table {\n"
+                },
+                {
+                    "date": 1641720243259,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -182,9 +182,9 @@\n }\n \n /* インプットボックス */\n .searchBox{\n-    \n+    width:\n }\n \n \n /* テーブル */\n"
+                },
+                {
+                    "date": 1641720263015,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -182,9 +182,9 @@\n }\n \n /* インプットボックス */\n .searchBox{\n-    width:\n+    width: 340px;\n }\n \n \n /* テーブル */\n"
+                },
+                {
+                    "date": 1641733599254,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -270,4 +270,6 @@\n     top: 0.5rem;\n     right: 1rem;\n     cursor: pointer;\n }\n+\n+\n"
+                },
+                {
+                    "date": 1641733605709,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -271,5 +271,7 @@\n     right: 1rem;\n     cursor: pointer;\n }\n \n-\n+.selectModalList{\n+    \n+}\n"
+                },
+                {
+                    "date": 1641733612130,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -273,5 +273,8 @@\n }\n \n .selectModalList{\n     \n+    height: 35px;\n+    background-color: #696969;\n+    color: white;\n }\n"
+                },
+                {
+                    "date": 1641733622988,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -271,10 +271,10 @@\n     right: 1rem;\n     cursor: pointer;\n }\n \n-.selectModalList{\n-    \n+.selectModalList\n+{\n     height: 35px;\n     background-color: #696969;\n     color: white;\n }\n"
+                },
+                {
+                    "date": 1641733639389,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n-@import 'tailwindcss/base';\n-@import 'tailwindcss/components';\n-@import 'tailwindcss/utilities';\n+@import \"tailwindcss/base\";\n+@import \"tailwindcss/components\";\n+@import \"tailwindcss/utilities\";\n \n /* 最小画面幅 */\n-.screen{\n+.screen {\n     min-width: 950px;\n }\n \n /* ドロップダウンメニュー */\n@@ -37,9 +37,9 @@\n     display: inline;\n     zoom: 1;\n }\n \n-*+html .dropdwn_menu li {\n+* + html .dropdwn_menu li {\n     display: inline;\n     zoom: 1;\n }\n \n@@ -63,9 +63,9 @@\n     zoom: 1;\n     position: relative;\n }\n \n-*+html .dropdwn_menu ul.sub2 {\n+* + html .dropdwn_menu ul.sub2 {\n     zoom: 1;\n     position: relative;\n }\n \n@@ -123,10 +123,10 @@\n .putBtn {\n     @apply py-1 px-8 mt-6 rounded;\n }\n \n-.addressSearchBtn{\n-    @apply  rounded text-xs mt-1 ml-12 px-7 py-2;\n+.addressSearchBtn {\n+    @apply rounded text-xs mt-1 ml-12 px-7 py-2;\n }\n \n .btn-green {\n     @apply bg-green-600 text-white;\n@@ -175,19 +175,17 @@\n .notAllowed {\n     cursor: not-allowed !important;\n }\n \n-.searchBtn{\n+.searchBtn {\n     @apply py-1 px-4 cursor-pointer;\n-\n }\n \n /* インプットボックス */\n-.searchBox{\n+.searchBox {\n     width: 340px;\n }\n \n-\n /* テーブル */\n .table {\n     width: 800px;\n     border-collapse: collapse;\n@@ -224,9 +222,8 @@\n .tbody .td a:hover {\n     text-decoration: underline;\n }\n \n-\n /* モーダルCSS */\n .modalArea {\n     display: none;\n     position: fixed;\n@@ -271,10 +268,9 @@\n     right: 1rem;\n     cursor: pointer;\n }\n \n-.selectModalList\n-{\n+.selectModalList {\n     height: 35px;\n     background-color: #696969;\n     color: white;\n }\n"
+                },
+                {
+                    "date": 1642078853947,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,8 @@\n     display: block;\n     width: 100%;\n     height: 100%;\n     line-height: 36px;\n-    font-weight: bold;\n     color: whitesmoke;\n     text-decoration: none;\n     position: relative;\n }\n"
+                },
+                {
+                    "date": 1642231578534,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -196,9 +196,8 @@\n }\n \n .td {\n     border: 1px solid black;\n-    padding-left: 10px;\n }\n \n .thead .th {\n     height: 35px;\n"
                 }
             ],
             "date": 1639797890897,

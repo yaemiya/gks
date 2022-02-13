@@ -24,22 +24,36 @@
   margin: 0 auto;
 }
 
-.btn {
-  margin-bottom: 0.5rem;
-  cursor: pointer;
-  border-radius: 0.25rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
+/* テーブル */
+
+.indexTable{
+  width: 800px;
 }
 
-.putBtn {
-  margin-top: 1.5rem;
-  border-radius: 0.25rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
+.tId{
+  width: 150px;
+}
+
+.tName{
+  width: 400px;
+}
+
+.tRepName{
+  width: 250px;
+}
+
+.registerTable{
+  width: 600px;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.registerTable .tr{
+  height: 42px;
+}
+
+.registerTd{
+  padding-left: 0 important!;
+  border: 1px solid black;
 }
 

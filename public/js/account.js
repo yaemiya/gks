@@ -10930,7 +10930,9 @@ var __webpack_exports__ = {};
 $(function () {
   // ユーザー一覧画面の新規登録ボタンクリック時
   $('#createBtn').on('click', function () {
-    if ($('#role').data('role') === "1") {
+    console.log($(this).data('role'));
+
+    if ($(this).data('role') === 1) {
       window.location.href = '/account/create';
     }
   }); // ユーザー新規登録画面のアカウント作成ボタンクリック時
@@ -11163,38 +11165,46 @@ $(function () {
 }); // ログインID形式チェック
 
 function isLoginFormat(str) {
-  if (str.match(/^[A-Za-z0-9\._-]*$/)) {
-    return true;
-  } else {
-    return false;
+  if (str !== undefined) {
+    if (str.match(/^[A-Za-z0-9\._-]*$/)) {
+      return true;
+    } else {
+      return false;
+    }
   }
 } // 半角英数チェック
 
 
 function isHanEisu(str) {
-  if (str.match(/^[A-Za-z0-9]*$/)) {
-    return true;
-  } else {
-    return false;
+  if (str !== undefined) {
+    if (str.match(/^[A-Za-z0-9]*$/)) {
+      return true;
+    } else {
+      return false;
+    }
   }
 } // メールチェック
 
 
 function mailCheck(str) {
-  // 全角が含まれず、{1}@{2} のような形式、-._の記号が使用可能
-  if (str.match(/^([a-zA-Z0-9])+([a-zA-Z0-9\._-])*@([a-zA-Z0-9_-])+([a-zA-Z0-9\._-]+)+$/)) {
-    return true;
-  } else {
-    return false;
+  if (str !== undefined) {
+    // 全角が含まれず、{1}@{2} のような形式、-._の記号が使用可能
+    if (str.match(/^([a-zA-Z0-9])+([a-zA-Z0-9\._-])*@([a-zA-Z0-9_-])+([a-zA-Z0-9\._-]+)+$/)) {
+      return true;
+    } else {
+      return false;
+    }
   }
 } // 半角数字チェック
 
 
 function isNumber(str) {
-  if (str.match(/^\d*$/)) {
-    return true;
-  } else {
-    return false;
+  if (str !== undefined) {
+    if (str.match(/^\d*$/)) {
+      return true;
+    } else {
+      return false;
+    }
   }
 }
 })();

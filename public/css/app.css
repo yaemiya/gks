@@ -32137,6 +32137,16 @@ select {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* 最小画面幅 */
+
+.screen {
+  min-width: 950px;
+}
+
+.header {
+  min-width: 950px;
+}
+
 /* ドロップダウンメニュー */
 
 .dropdwn_menu {
@@ -32169,7 +32179,7 @@ select {
   zoom: 1;
 }
 
-*+html .dropdwn_menu li {
+* + html .dropdwn_menu li {
   display: inline;
   zoom: 1;
 }
@@ -32179,7 +32189,6 @@ select {
   width: 100%;
   height: 100%;
   line-height: 36px;
-  font-weight: bold;
   color: whitesmoke;
   text-decoration: none;
   position: relative;
@@ -32195,7 +32204,7 @@ select {
   position: relative;
 }
 
-*+html .dropdwn_menu ul.sub2 {
+* + html .dropdwn_menu ul.sub2 {
   zoom: 1;
   position: relative;
 }
@@ -32249,6 +32258,37 @@ select {
 
 /* ボタン */
 
+.btn {
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.putBtn {
+  margin-top: 1.5rem;
+  border-radius: 0.25rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.addressSearchBtn {
+  margin-top: 0.25rem;
+  margin-left: 3rem;
+  border-radius: 0.25rem;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .btn-green {
   --tw-bg-opacity: 1;
   background-color: rgba(5, 150, 105, var(--tw-bg-opacity));
@@ -32297,6 +32337,18 @@ select {
   background-color: rgba(156, 163, 175, var(--tw-bg-opacity));
 }
 
+.btn-black {
+  --tw-bg-opacity: 1;
+  background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.btn-black:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(107, 114, 128, var(--tw-bg-opacity));
+}
+
 .btn-disabled {
   --tw-bg-opacity: 1;
   background-color: rgba(156, 163, 175, var(--tw-bg-opacity));
@@ -32308,42 +32360,55 @@ select {
   cursor: not-allowed !important;
 }
 
+.searchBtn {
+  cursor: pointer;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+/* インプットボックス */
+
+.searchBox {
+  width: 340px;
+}
+
 /* テーブル */
 
-table {
-  /* width: 90%; */
+.table {
+  width: 800px;
   border-collapse: collapse;
   margin: 0 auto;
 }
 
-th {
+.th {
   border: 1px solid black;
 }
 
-td {
+.td {
   border: 1px solid black;
-  padding-left: 10px;
 }
 
-thead th {
+.thead .th {
   height: 35px;
-  background-color: gray;
+  background-color: #696969;
   color: white;
 }
 
-tbody td {
+.tbody .td {
   height: 45px;
 }
 
-tbody tr:nth-child(2n) {
+.tbody .tr:nth-child(2n) {
   background-color: #dcdcdc;
 }
 
-tbody a {
+.tbody a {
   color: blue;
 }
 
-tbody td a:hover {
+.tbody .td a:hover {
   text-decoration: underline;
 }
 
@@ -32353,7 +32418,6 @@ tbody td a:hover {
   display: none;
   position: fixed;
   z-index: 10;
-  /*サイトによってここの数値は調整 */
   top: 0;
   left: 0;
   width: 100%;
@@ -32377,11 +32441,28 @@ tbody td a:hover {
   background-color: #fff;
 }
 
+.selectModalWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  max-width: 500px;
+  padding: 30px 40px;
+  background-color: #fff;
+}
+
 .closeModal {
   position: absolute;
   top: 0.5rem;
   right: 1rem;
   cursor: pointer;
+}
+
+.selectModalTitle {
+  height: 35px;
+  background-color: #696969;
+  color: white;
 }
 
 @media (min-width: 640px) {

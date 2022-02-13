@@ -1,6 +1,0 @@
-@charset "UTF-8";
-
-
-.registerbtn {
-    @apply py-1 px-4 mb-1 rounded;
-}

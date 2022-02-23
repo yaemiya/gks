@@ -33,6 +33,7 @@ class SupplierController extends Controller
         Log::info('SupplierController/index start! auth user_id=' . Auth::user()->user_id);
 
         $suppliers = Supplier::all();
+
         return view('supplier.supplier_index', compact('suppliers'));
     }
 

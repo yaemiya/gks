@@ -36,7 +36,7 @@
                             <td class="td px-4"><a
                                     href="account/detail/{{ $supplier->supplier_id }}">{{ $supplier->supplier_name }}</a>
                             </td>
-                                <td class="td px-4" {{ $supplier->supplier_rep_name }}</td>
+                                <td class="td px-4">{{ $supplier->rep_name }}</td>
                         </tr>
                     @endforeach
                 </tbody>
